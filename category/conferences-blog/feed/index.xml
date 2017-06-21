@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Conferences &#8211; Kevin Ragsdale</title>
+	<atom:link href="/category/conferences-blog/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Southwest Fox 2015 Speakers and Sessions</title>
+		<link>/southwest-fox-2015-speakers-and-sessions/</link>
+		<pubDate>Thu, 07 May 2015 02:40:50 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[conferences]]></category>
+		<category><![CDATA[southwest fox 2015]]></category>
+		<category><![CDATA[southwest xbase++ 2015]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[xbase++]]></category>
+
+		<guid isPermaLink="false">/?p=2248</guid>
+		<description><![CDATA[<p>Speakers and sessions for the Southwest Fox and Southwest Xbase++ conferences have been announced! The Southwest Fox 2015 Conference has fewer speakers and tracks this year (eight and two, respectively), but there is a chance that more speakers could be added, depending on the number of registrations by July 1st. The list of speakers for 2015 [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/southwest-fox-2015-speakers-and-sessions/">Southwest Fox 2015 Speakers and Sessions</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">2248</post-id>	</item>
+		<item>
+		<title>I Need Some SUBSTR() Help, Please!</title>
+		<link>/need-substr-help-please/</link>
+		<comments>/need-substr-help-please/#comments</comments>
+		<pubDate>Thu, 23 Oct 2014 13:16:37 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[SUBSTR()]]></category>
+		<category><![CDATA[unicode]]></category>
+		<category><![CDATA[utf-8]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=1518</guid>
+		<description><![CDATA[<p>Last week, I presented a session titled, &#8220;Unicode Made Easier with SQLite&#8221; at the Southwest Fox 2014 conference. At the end of the session, an attendee asked about manipulating strings, specifically using SUBSTR() on UTF-8 encoded strings. Last night, I played around with creating my own SUBSTR() function to deal with UTF-8 encoded strings, and [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/need-substr-help-please/">I Need Some SUBSTR() Help, Please!</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/need-substr-help-please/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">1518</post-id>	</item>
+		<item>
+		<title>Southwest Fox 2014</title>
+		<link>/southwest-fox-2014/</link>
+		<pubDate>Sat, 21 Jun 2014 13:36:59 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[southwest fox 2014]]></category>
+		<category><![CDATA[southwest xbase++ 2014]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=1453</guid>
+		<description><![CDATA[<p>There&#8217;s only a few days left&#8230; Registration for Southwest Fox 2014 and Southwest Xbase++ 2014 is open, and there&#8217;s only a few days left to save $125  and receive a free half-day pre-conference session. Pre-conference sessions are three-hours long, which provide a great opportunity to dive deeper into the session topic. There are four pre-conference [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/southwest-fox-2014/">Southwest Fox 2014</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1453</post-id>	</item>
+		<item>
+		<title>Shameless Self-Promotion</title>
+		<link>/shameless-self-promotion/</link>
+		<comments>/shameless-self-promotion/#comments</comments>
+		<pubDate>Tue, 12 Jun 2012 18:06:43 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[Multithreaded Visual FoxPro]]></category>
+		<category><![CDATA[multithreaded vfp]]></category>
+		<category><![CDATA[speaking]]></category>
+		<category><![CDATA[user group]]></category>
+
+		<guid isPermaLink="false">/?p=174</guid>
+		<description><![CDATA[<p>I'll be presenting the "Easy Multithreading with Visual FoxPro" session I did at Southwest Fox 2011 at the Atlanta FoxPro Users Group on June 21, 2012.</p>
+<p>The post <a rel="nofollow" href="/shameless-self-promotion/">Shameless Self-Promotion</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/shameless-self-promotion/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">174</post-id>	</item>
+		<item>
+		<title>Don&#8217;t Miss the Deadline</title>
+		<link>/dont-miss-the-deadline/</link>
+		<pubDate>Wed, 29 Jun 2011 21:03:57 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[southwest fox 2011]]></category>
+
+		<guid isPermaLink="false">/?p=30</guid>
+		<description><![CDATA[<p>Updated: Links point to the 2011 Southwest Fox Conference. Click here for the current conference. The Southwest Fox 2011 Conference kicks-off Wednesday, October 26th with four pre-conference sessions. Whether you&#8217;re interested in client-server development, FoxPro and Smartphones,FoxInCloud, or getting started with ASP.NET MVC3, this years pre-conference schedule has something for everyone. And I know a way you can attend one of [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/dont-miss-the-deadline/">Don&#8217;t Miss the Deadline</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">30</post-id>	</item>
+	</channel>
+</rss>

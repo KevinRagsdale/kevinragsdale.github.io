@@ -1,0 +1,488 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>DLL Hell Rears Its Ugly Head</title>
+		<link rel="canonical" href="/dll-hell-rears-its-ugly-head/" />
+		<script src="https://cdn.ampproject.org/v0.js" async></script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"\/dll-hell-rears-its-ugly-head\/","publisher":{"@type":"Organization","name":"Kevin Ragsdale"},"headline":"DLL Hell Rears Its Ugly Head","datePublished":"2008-04-27T10:38:52+00:00","dateModified":"2008-04-27T10:38:52+00:00","author":{"@type":"Person","name":"Kevin Ragsdale"}}</script>
+		<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 730px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 1.5em;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+			</style>
+</head>
+
+<body class="">
+
+<header id="#top" class="amp-wp-header">
+	<div>
+		<a href="/">
+						Kevin Ragsdale		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">DLL Hell Rears Its Ugly Head</h1>
+				<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/312fca19660d3ccc712d9a90106dadd3?s=24&#038;d=mm&#038;r=g" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Kevin Ragsdale</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2008-04-27T10:38:52+00:00">
+		9 years ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p>If there’s a moral to this story, it’s this: <strong>Watch Your Runtimes</strong>.</p>
+<p>Oh, yeah, and this: <strong>Trust No One</strong>.</p>
+<p>A little background:</p>
+<p>Last year, I had an opportunity to develop a shrink-wrap application using Visual FoxPro 9.</p>
+<p>The product was originally released in March of 2007, built with Visual FoxPro 9 Service Pack 1.</p>
+<p>A couple of months ago, we released a major version update.</p>
+<p>The new version was built with Service Pack 2.</p>
+<p>Now, before the “<em>I-Won’t-Install-Service Pack 2-Because-I-Heard-It-Has-Some-Bugs-And-Besides-I’m-Mad-At-Microsoft-For-Killing-FoxPro</em>” crowd starts drooling at the prospect of this being a ‘Service Pack 2 Killed My App’ post, let me say this:</p>
+<p>“Install VFP 9 Service Pack 2. Today. Stop reading this, and go try it out. Try it on a test machine. Try it on Virtual PC. Just<strong> try</strong> it! Quit whining about what it <em>might</em> do to your apps, and go see for yourself. You’ll never know until you try.”</p>
+<p>Whew! That felt good to get that off my chest. Now, back to the story:</p>
+<p>Everything was going great, until I received the following support email:</p>
+<blockquote><p>I’m getting a Visual Fox Pro error in shared file.<br/>
+The error log is not telling me anything else.<br/>
+Microsoft Visual FoxPro<br/>
+Fatal error: Exception code=C0000005 @ 03/27/08 05:16:37 PM.<br/>
+Error log file: C:Program FilesCommon FilesMicrosoft SharedVFPvfp9rerr.log<br/>
+Does this mean anything to you?</p></blockquote>
+<p>A C0000005 error? Rut-roh…</p>
+<p>I exchanged several emails with the user, trying to determine when, where, why, and how this was happening.</p>
+<p>During the course of the email exchanges, the user sent me some screenshots.</p>
+<p>She stated that the “first” error occurs immediately after clicking the application icon on the Windows desktop:</p>
+<p><a href="https://i0.wp.com/lh5.ggpht.com/KevinRagsdale/SBSd3q7y4UI/AAAAAAAAABU/9ySp2AlLA8M/s1600-h/UhOh%5B17%5D.png"><amp-img src="https://i2.wp.com/lh3.ggpht.com/KevinRagsdale/SBSd4K7y4VI/AAAAAAAAABc/j99pClxL528/UhOh_thumb%5B13%5D.png?resize=502%2C252" alt="UhOh" width="502" height="252" sizes="(min-width: 502px) 502px, 100vw" class="amp-wp-enforced-sizes"></amp-img></a></p>
+<p>If she clicked the “What data does this error report contain?” link, she got the following:</p>
+<p><a href="https://i2.wp.com/lh4.ggpht.com/KevinRagsdale/SBSd4a7y4WI/AAAAAAAAABk/DMVDO6SLjYY/s1600-h/ErrorRpt%5B4%5D.png"><amp-img src="https://i1.wp.com/lh6.ggpht.com/KevinRagsdale/SBSd467y4XI/AAAAAAAAABs/djqKAk41HC0/ErrorRpt_thumb%5B2%5D.png?resize=495%2C338" alt="ErrorRpt" width="495" height="338" sizes="(min-width: 495px) 495px, 100vw" class="amp-wp-enforced-sizes"></amp-img></a></p>
+<p>Well, that tells me alot. 😉</p>
+<p>She clicked close on the window above, then clicked Don’t Send on the previous window, then boom:</p>
+<p><a href="https://i0.wp.com/lh3.ggpht.com/KevinRagsdale/SBSd5K7y4YI/AAAAAAAAAB0/2By12OegRt4/s1600-h/C00005%5B3%5D.png"><amp-img src="https://i0.wp.com/lh5.ggpht.com/KevinRagsdale/SBSd5q7y4ZI/AAAAAAAAAB8/PwC191xBrHo/C00005_thumb%5B1%5D.png?resize=523%2C153" alt="C00005" width="523" height="153" sizes="(min-width: 523px) 523px, 100vw" class="amp-wp-enforced-sizes"></amp-img></a></p>
+<p>While researching the issue, another user sent me almost the exact same email. He was very upset about the error, because it seemed to him that this thing called Microsoft Visual FoxPro was obviously some kind of spyware/malware/virus or something. After all, why else would the error report contain all these weird-looking code-thingies like ModName, ModVer, ModStamp, fDebug and Offset? After Googling “Visual FoxPro”, he went onto an MSDN Forum to ask why this was happening.</p>
+<p>In-house, we tried and tried and tried to recreate the issue. No go. We couldn’t recreate the error no matter how hard we tried.</p>
+<p>The next day, the first user sent me another email:</p>
+<blockquote><p>I’ve figured it out!!!!</p>
+<p>Your updated program is fighting with another Visual Fox Pro program on my machine:</p>
+<p>I discovered this when I opened the program and received the same error.</p>
+<p>Both programs are very important to me and I’ve also been in touch with them, too. I’m hoping we can get all the programmers heads together to figure out how to resolve the problem.</p>
+<p>Can you tell me which VFP version you are using for your program so I can report back?</p></blockquote>
+<p>I asked her for the name of the “other” program, and I went to their website and downloaded a 30-day trial version of their software. I fired up Virtual PC and installed the program. Imagine my surprise when I saw the Wise Installer putting VFP9R.DLL in the C:WINDOWSSYSTEM32 folder.</p>
+<p><em>While you’re at it, also imagine my expletive-filled shouts while watching the install.</em></p>
+<p><a href="https://i0.wp.com/lh3.ggpht.com/KevinRagsdale/SBSd6K7y4aI/AAAAAAAAACE/7L9DrJAJOfQ/s1600-h/RunTime%5B3%5D.png"><amp-img src="https://i0.wp.com/lh4.ggpht.com/KevinRagsdale/SBSd6a7y4bI/AAAAAAAAACM/FaXpLlbjpC8/RunTime_thumb%5B1%5D.png?resize=730%2C400" alt="RunTime" width="730" height="400" sizes="(min-width: 730px) 730px, 100vw" class="amp-wp-enforced-sizes"></amp-img></a></p>
+<p>These runtime files, from that “other” program, were Visual FoxPro 9 Service Pack 1 runtimes.</p>
+<p>I then installed my app, which put the runtimes in the following folder:</p>
+<p><a href="https://i2.wp.com/lh6.ggpht.com/KevinRagsdale/SBSd667y4cI/AAAAAAAAACU/P7eC64EdFYs/s1600-h/VFP9SP2%5B4%5D.png"><amp-img src="https://i1.wp.com/lh4.ggpht.com/KevinRagsdale/SBSd7a7y4dI/AAAAAAAAACc/O3rNIbxT1w8/VFP9SP2_thumb%5B2%5D.png?resize=730%2C276" alt="VFP9SP2" width="730" height="276" sizes="(min-width: 730px) 730px, 100vw" class="amp-wp-enforced-sizes"></amp-img></a></p>
+<p>Started up my app, and <strong>BOOM!!!</strong> The issue has now been “officially” recreated.</p>
+<p>I contacted the makers of the other software, and pointed them to the <a href="http://fox.wikis.com/wc.dll?Wiki~VFPRuntimeFiles" target="_blank">FoxWiki pages</a> about VFP Runtimes.</p>
+<p>But, not wanting my app to be at the mercy of another development shop, I changed my installer to just dump the VFP 9 SP2 runtimes into the folder where the app is installed.</p>
+<p><a href="https://i0.wp.com/lh6.ggpht.com/KevinRagsdale/SBSd767y4eI/AAAAAAAAACk/mk3isDo6tA8/s1600-h/Fixed%5B4%5D.png"><amp-img src="https://i2.wp.com/lh4.ggpht.com/KevinRagsdale/SBSd8a7y4fI/AAAAAAAAACs/1doW15hsE9g/Fixed_thumb%5B2%5D.png?resize=680%2C370" alt="Fixed" width="680" height="370" sizes="(min-width: 680px) 680px, 100vw" class="amp-wp-enforced-sizes"></amp-img></a></p>
+<p>No registration, no nothing. Just a file copy.</p>
+<p>I restarted my app, and it worked! Woo Hoo!!!</p>
+<p>I sent the new installer out to the affected users, and they reported back that the “new version” worked. I loved the “new version” part, because the only thing that changed was the install itself.</p>
+<p>Of course, the “other” app was still broken, because when my app was originally installed the new VFP runtimes were registered on the system.</p>
+<p>A quick reinstall of the “other” app caused the VFP 9 SP1 runtimes to be re-registered in C:WINDOWSSYSTEM32, and now both programs “work” and my users are happy once again.</p>
+<p>From now on, all of my apps will have the VFP Runtimes placed in the same folder as the app itself.</p>
+<p><strong>Watch Your Runtimes</strong>.</p>
+<p><strong>Trust No One</strong>.</p>
+<blockquote><p><strong>This post originally appeared on <a href="http://blogger.com/" target="_blank">Blogger</a>.</strong></p></blockquote>
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/programming/" rel="category tag">Programming</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/dll-hell/" rel="tag">dll hell</a>	</div>
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="/dll-hell-rears-its-ugly-head/#comments">
+			View Comments		</a>
+	</div>
+	</footer>
+
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Kevin Ragsdale</h2>
+		<p>
+			<a href="https://wordpress.org/">Powered by WordPress</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+	<amp-pixel src="https://pixel.wp.com/g.gif?v=ext&#038;j=1%3A5.0&#038;blog=34471053&#038;post=263&#038;tz=-5&#038;srv=kevinragsdale.net&#038;host=kevinragsdale.net&#038;rand=RANDOM&#038;ref=DOCUMENT_REFERRER"></amp-pixel>
+	
+</body>
+</html>

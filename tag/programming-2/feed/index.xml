@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>programming &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/programming-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Windows Is Lying To You&#8230; With DPI Virtualization</title>
+		<link>/windows-is-lying-to-you-with-dpi-virtualization/</link>
+		<pubDate>Wed, 02 Jan 2013 11:00:45 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[foxpro]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[winapi]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=913</guid>
+		<description><![CDATA[<p>Windows lies, and Kevin cries, because his apps are blurry...</p>
+<p>The post <a rel="nofollow" href="/windows-is-lying-to-you-with-dpi-virtualization/">Windows Is Lying To You&#8230; With DPI Virtualization</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">913</post-id>	</item>
+		<item>
+		<title>SET PROCEDURE TO MyDll</title>
+		<link>/set-procedure-to-mydll/</link>
+		<pubDate>Sat, 28 May 2011 22:20:58 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[programming]]></category>
+
+		<guid isPermaLink="false">/?p=38</guid>
+		<description><![CDATA[<p>I use the Microsoft Web Browser Control as the primary UI for an app. This means I need a ton of support files like cascading stylesheets, javascript files, images, etc. Typically, I create a subfolder in the Windows &#8220;Temp&#8221; (SYS(2023)) folder for the HTML files, then subfolders for each of the support file types (CSS, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/set-procedure-to-mydll/">SET PROCEDURE TO MyDll</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">38</post-id>	</item>
+		<item>
+		<title>I&#8217;ve Seen This Before. It&#8217;s An Outlier.</title>
+		<link>/ive-seen-this-before-its-an-outlier/</link>
+		<pubDate>Mon, 09 May 2011 01:23:50 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[vfpencryption]]></category>
+
+		<guid isPermaLink="false">/?p=40</guid>
+		<description><![CDATA[<p>UPDATE: Finally figured out this issue. I was encrypting an XML file, which caused some illegal characters to appear from time to time (the &#8220;outlier&#8221; instances). Took out the header of the XML file, and everything works as expected. I recently added some functionality to an app which allows the app to login to a [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/ive-seen-this-before-its-an-outlier/">I&#8217;ve Seen This Before. It&#8217;s An Outlier.</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">40</post-id>	</item>
+		<item>
+		<title>If You Write Visual FoxPro Apps…</title>
+		<link>/if-you-write-visual-foxpro-apps/</link>
+		<pubDate>Sat, 13 Mar 2010 23:03:54 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[dll hell]]></category>
+		<category><![CDATA[programming]]></category>
+
+		<guid isPermaLink="false">/?p=286</guid>
+		<description><![CDATA[<p>If you’re a Visual FoxPro developer, and you like to install the VFP runtime files in the WindowsSystem32 folder, Please… STOP. /dll-hell-rears-its-ugly-head</p>
+<p>The post <a rel="nofollow" href="/if-you-write-visual-foxpro-apps/">If You Write Visual FoxPro Apps…</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">286</post-id>	</item>
+	</channel>
+</rss>

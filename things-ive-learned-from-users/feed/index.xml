@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Things I&#8217;ve Learned From Users</title>
+	<atom:link href="/things-ive-learned-from-users/feed/" rel="self" type="application/rss+xml" />
+	<link>/things-ive-learned-from-users/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: Christof Is A Freaking Genius &#124; Kevin Ragsdale</title>
+		<link>/things-ive-learned-from-users/#comment-151</link>
+		<dc:creator><![CDATA[Christof Is A Freaking Genius &#124; Kevin Ragsdale]]></dc:creator>
+		<pubDate>Sat, 21 Jul 2012 16:31:54 +0000</pubDate>
+		<guid isPermaLink="false">/?p=92#comment-151</guid>
+		<description><![CDATA[[...] I just love to control how the user uses the app, I displayed a modal window while this request was taking [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] I just love to control how the user uses the app, I displayed a modal window while this request was taking [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>memory &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/memory/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>From A Hog To Just A Pig With A Simple Windows API Call</title>
+		<link>/from-a-hog-to-just-a-pig-with-a-simple-windows-api-call/</link>
+		<pubDate>Mon, 27 Jul 2009 00:50:51 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[memory]]></category>
+		<category><![CDATA[winapi]]></category>
+
+		<guid isPermaLink="false">/?p=280</guid>
+		<description><![CDATA[<p>Reducing memory consumption of your Visual FoxPro apps is easily done with a couple of Windows API calls, thanks to Sergey.</p>
+<p>The post <a rel="nofollow" href="/from-a-hog-to-just-a-pig-with-a-simple-windows-api-call/">From A Hog To Just A Pig With A Simple Windows API Call</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">280</post-id>	</item>
+	</channel>
+</rss>

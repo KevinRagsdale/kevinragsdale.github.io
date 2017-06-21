@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vfp crash &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/vfp-crash/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Catastrophic Failure and Desktop Alerts</title>
+		<link>/catastrophic-failure-and-desktop-alerts/</link>
+		<comments>/catastrophic-failure-and-desktop-alerts/#comments</comments>
+		<pubDate>Thu, 12 Apr 2007 18:45:27 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[catastrophic failure]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[vfp crash]]></category>
+
+		<guid isPermaLink="false">/?p=243</guid>
+		<description><![CDATA[<p>Yesterday, I posted a screenshot of my scariest error message. It was a message I had gotten while playing with the Desktop Alerts. Randy Jean commented that he saw the same error with the Desktop Alerts. In the Alert class nResult_Assign() method, I had the Alert calling its Release() method. So, if you had code like this: oMgr = CreateObject("VFPAlert.AlertManager") [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/catastrophic-failure-and-desktop-alerts/">Catastrophic Failure and Desktop Alerts</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/catastrophic-failure-and-desktop-alerts/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">243</post-id>	</item>
+	</channel>
+</rss>

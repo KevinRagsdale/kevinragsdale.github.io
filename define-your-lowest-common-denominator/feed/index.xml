@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Define Your Lowest Common Denominator</title>
+	<atom:link href="/define-your-lowest-common-denominator/feed/" rel="self" type="application/rss+xml" />
+	<link>/define-your-lowest-common-denominator/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: Respecting The User&#8217;s Font Settings &#124; Kevin Ragsdale</title>
+		<link>/define-your-lowest-common-denominator/#comment-170</link>
+		<dc:creator><![CDATA[Respecting The User&#8217;s Font Settings &#124; Kevin Ragsdale]]></dc:creator>
+		<pubDate>Tue, 01 Jan 2013 11:04:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=835#comment-170</guid>
+		<description><![CDATA[[...] an effort to “define the lowest common denominator”, I&#8217;ve decided to use Tahoma exclusively in Windows XP, and Segoe UI in Windows Vista and [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] an effort to “define the lowest common denominator”, I&#8217;ve decided to use Tahoma exclusively in Windows XP, and Segoe UI in Windows Vista and [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

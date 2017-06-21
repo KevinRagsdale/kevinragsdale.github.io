@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>winapi &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/winapi/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Windows Is Lying To You&#8230; With DPI Virtualization</title>
+		<link>/windows-is-lying-to-you-with-dpi-virtualization/</link>
+		<pubDate>Wed, 02 Jan 2013 11:00:45 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[foxpro]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[winapi]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=913</guid>
+		<description><![CDATA[<p>Windows lies, and Kevin cries, because his apps are blurry...</p>
+<p>The post <a rel="nofollow" href="/windows-is-lying-to-you-with-dpi-virtualization/">Windows Is Lying To You&#8230; With DPI Virtualization</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">913</post-id>	</item>
+		<item>
+		<title>From A Hog To Just A Pig With A Simple Windows API Call</title>
+		<link>/from-a-hog-to-just-a-pig-with-a-simple-windows-api-call/</link>
+		<pubDate>Mon, 27 Jul 2009 00:50:51 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[memory]]></category>
+		<category><![CDATA[winapi]]></category>
+
+		<guid isPermaLink="false">/?p=280</guid>
+		<description><![CDATA[<p>Reducing memory consumption of your Visual FoxPro apps is easily done with a couple of Windows API calls, thanks to Sergey.</p>
+<p>The post <a rel="nofollow" href="/from-a-hog-to-just-a-pig-with-a-simple-windows-api-call/">From A Hog To Just A Pig With A Simple Windows API Call</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">280</post-id>	</item>
+		<item>
+		<title>Don’t Be So Hard On Yourself (or, ShellExecute() to the Rescue!)</title>
+		<link>/dont-be-so-hard-on-yourself-or-shellexecute-to-the-rescue/</link>
+		<pubDate>Tue, 21 Jul 2009 18:53:10 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[winapi]]></category>
+		<category><![CDATA[windows api]]></category>
+
+		<guid isPermaLink="false">/?p=278</guid>
+		<description><![CDATA[<p>I’ve got a bad habit of always trying to reinvent the wheel, even when I’ve got a perfectly good wheel right in front of me. I just wrapped up some work on a Visual FoxPro app that uses a lot of rich-text format (RTF) files, and I was hitting a brick wall when it came to printing [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/dont-be-so-hard-on-yourself-or-shellexecute-to-the-rescue/">Don’t Be So Hard On Yourself (or, ShellExecute() to the Rescue!)</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">278</post-id>	</item>
+		<item>
+		<title>Creating a &#8220;Fading&#8221; Form</title>
+		<link>/creating-a-fading-form/</link>
+		<comments>/creating-a-fading-form/#comments</comments>
+		<pubDate>Thu, 24 Mar 2005 21:32:08 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[forms]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[winapi]]></category>
+
+		<guid isPermaLink="false">/?p=83</guid>
+		<description><![CDATA[<p>I love the Desktop Alerts in Outlook 2003. They provide useful information without interfering with my work. I can&#8217;t stand to be working on one thing and suddenly have a MESSAGEBOX appear from another app informing me that it just did something wonderful on my behalf. The Desktop Alerts simply “appear” on my screen for a few [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/creating-a-fading-form/">Creating a &#8220;Fading&#8221; Form</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/creating-a-fading-form/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">83</post-id>	</item>
+	</channel>
+</rss>

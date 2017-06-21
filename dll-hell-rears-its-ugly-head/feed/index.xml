@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: DLL Hell Rears Its Ugly Head</title>
+	<atom:link href="/dll-hell-rears-its-ugly-head/feed/" rel="self" type="application/rss+xml" />
+	<link>/dll-hell-rears-its-ugly-head/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: If You Write Visual FoxPro Apps… &#124; Kevin Ragsdale</title>
+		<link>/dll-hell-rears-its-ugly-head/#comment-157</link>
+		<dc:creator><![CDATA[If You Write Visual FoxPro Apps… &#124; Kevin Ragsdale]]></dc:creator>
+		<pubDate>Fri, 29 Jun 2012 15:57:21 +0000</pubDate>
+		<guid isPermaLink="false">/?p=263#comment-157</guid>
+		<description><![CDATA[[...] /dll-hell-rears-its-ugly-head Share this:ShareDiggRedditFacebookEmailStumbleUpon [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] <a href="/dll-hell-rears-its-ugly-head" rel="nofollow">/dll-hell-rears-its-ugly-head</a> Share this:ShareDiggRedditFacebookEmailStumbleUpon [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

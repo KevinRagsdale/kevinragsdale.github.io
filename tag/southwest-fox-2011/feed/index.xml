@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>southwest fox 2011 &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/southwest-fox-2011/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Don&#8217;t Miss the Deadline</title>
+		<link>/dont-miss-the-deadline/</link>
+		<pubDate>Wed, 29 Jun 2011 21:03:57 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[southwest fox 2011]]></category>
+
+		<guid isPermaLink="false">/?p=30</guid>
+		<description><![CDATA[<p>Updated: Links point to the 2011 Southwest Fox Conference. Click here for the current conference. The Southwest Fox 2011 Conference kicks-off Wednesday, October 26th with four pre-conference sessions. Whether you&#8217;re interested in client-server development, FoxPro and Smartphones,FoxInCloud, or getting started with ASP.NET MVC3, this years pre-conference schedule has something for everyone. And I know a way you can attend one of [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/dont-miss-the-deadline/">Don&#8217;t Miss the Deadline</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">30</post-id>	</item>
+		<item>
+		<title>Southwest Fox 2011</title>
+		<link>/southwest-fox-2011/</link>
+		<pubDate>Sun, 29 May 2011 05:27:19 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[southwest fox 2011]]></category>
+
+		<guid isPermaLink="false">/?p=33</guid>
+		<description><![CDATA[<p>Updated: Links point to the 2011 Southwest Fox Conference. Click here for the current conference. Shortly after the speakers and sessions for the Southwest Fox 2011 Conference were announced, I received the following testimonial via email: Dear Kevin, I saw your name in the list of speakers for Southwest Fox 2011 and I've got to say, Southwest Fox is THE GO-TO [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/southwest-fox-2011/">Southwest Fox 2011</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">33</post-id>	</item>
+	</channel>
+</rss>

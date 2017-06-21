@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>foxpro programming &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/foxpro-programming/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Define Your Lowest Common Denominator</title>
+		<link>/define-your-lowest-common-denominator/</link>
+		<comments>/define-your-lowest-common-denominator/#comments</comments>
+		<pubDate>Fri, 28 Dec 2012 23:00:09 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[foxpro programming]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=835</guid>
+		<description><![CDATA[<p>Designing/developing apps is much easier when you decide the minimum requirements upfront.</p>
+<p>The post <a rel="nofollow" href="/define-your-lowest-common-denominator/">Define Your Lowest Common Denominator</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/define-your-lowest-common-denominator/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">835</post-id>	</item>
+		<item>
+		<title>So, What Is An Ugly App Anyway?</title>
+		<link>/so-what-is-an-ugly-app-anyway/</link>
+		<comments>/so-what-is-an-ugly-app-anyway/#comments</comments>
+		<pubDate>Fri, 28 Dec 2012 11:00:50 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[foxpro programming]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=796</guid>
+		<description><![CDATA[<p>Visual FoxPro: The good, the bad, the ugly.</p>
+<p>The post <a rel="nofollow" href="/so-what-is-an-ugly-app-anyway/">So, What Is An Ugly App Anyway?</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/so-what-is-an-ugly-app-anyway/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">796</post-id>	</item>
+		<item>
+		<title>Lose THE FoxPro</title>
+		<link>/lose-the-foxpro/</link>
+		<pubDate>Thu, 27 Dec 2012 23:00:22 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[foxpro programming]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=790</guid>
+		<description><![CDATA[<p>Quick tips to make sure your users don't know your app was written with "THE FoxPro".</p>
+<p>The post <a rel="nofollow" href="/lose-the-foxpro/">Lose THE FoxPro</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">790</post-id>	</item>
+		<item>
+		<title>What&#8217;s In A Name?</title>
+		<link>/whats-in-a-name/</link>
+		<pubDate>Thu, 27 Dec 2012 15:06:22 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[foxpro programming]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=778</guid>
+		<description><![CDATA[<p>Visual FoxPro. The name brings a smile to my face. But for my customers, it usually means something has gone wrong with my app.</p>
+<p>The post <a rel="nofollow" href="/whats-in-a-name/">What&#8217;s In A Name?</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">778</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>asp.net ajax &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/asp-net-ajax/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Flicker-Free Web Pages (no javascript required)</title>
+		<link>/flicker-free-web-pages-no-javascript-required/</link>
+		<pubDate>Mon, 28 Apr 2008 03:27:53 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Screencasts]]></category>
+		<category><![CDATA[asp.net ajax]]></category>
+		<category><![CDATA[web]]></category>
+
+		<guid isPermaLink="false">/?p=265</guid>
+		<description><![CDATA[<p>I&#8217;ve spent the last few weeks playing with ASP.NET 2.0, and I&#8217;ve enjoyed using the AutoPostBack feature of the various server controls. But one thing that drives me nuts is flickering web pages from the aforementioned AutoPostBack-enabled server controls, especially in the &#8220;Web 2.0 &#8211; Everything Is AJAX And If It&#8217;s Not It&#8217;s Just Crap&#8221; [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/flicker-free-web-pages-no-javascript-required/">Flicker-Free Web Pages (no javascript required)</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+<enclosure url="http://download.microsoft.com/download/0/f/6/0f651a0f-6f2b-4497-b061-e1b2825e22e0/MSAJAX-ToDoList.wmv" length="43621543" type="video/asf" />
+	<post-id xmlns="com-wordpress:feed-additions:1">265</post-id>	</item>
+	</channel>
+</rss>

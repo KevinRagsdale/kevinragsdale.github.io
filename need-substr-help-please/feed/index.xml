@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: I Need Some SUBSTR() Help, Please!</title>
+	<atom:link href="/need-substr-help-please/feed/" rel="self" type="application/rss+xml" />
+	<link>/need-substr-help-please/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: Kevin Ragsdale</title>
+		<link>/need-substr-help-please/#comment-7230</link>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+		<pubDate>Fri, 24 Oct 2014 09:34:50 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1518#comment-7230</guid>
+		<description><![CDATA[Thank you James!]]></description>
+		<content:encoded><![CDATA[<p>Thank you James!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: James Frye</title>
+		<link>/need-substr-help-please/#comment-7229</link>
+		<dc:creator><![CDATA[James Frye]]></dc:creator>
+		<pubDate>Fri, 24 Oct 2014 00:24:16 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1518#comment-7229</guid>
+		<description><![CDATA[Hi Kevin,
+
+That is correct!]]></description>
+		<content:encoded><![CDATA[<p>Hi Kevin,</p>
+<p>That is correct!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kevin Ragsdale</title>
+		<link>/need-substr-help-please/#comment-7226</link>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+		<pubDate>Thu, 23 Oct 2014 21:07:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1518#comment-7226</guid>
+		<description><![CDATA[Thank you Sergey!]]></description>
+		<content:encoded><![CDATA[<p>Thank you Sergey!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sergey Berezniker</title>
+		<link>/need-substr-help-please/#comment-7224</link>
+		<dc:creator><![CDATA[Sergey Berezniker]]></dc:creator>
+		<pubDate>Thu, 23 Oct 2014 19:52:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1518#comment-7224</guid>
+		<description><![CDATA[Yes it looks right. If I had to do it, I would start with  one of C++ Unicode string copy functions]]></description>
+		<content:encoded><![CDATA[<p>Yes it looks right. If I had to do it, I would start with  one of C++ Unicode string copy functions</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

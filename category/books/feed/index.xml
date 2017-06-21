@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Books &#8211; Kevin Ragsdale</title>
+	<atom:link href="/category/books/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Learn Visual FoxPro</title>
+		<link>/learn-visual-foxpro/</link>
+		<pubDate>Mon, 12 Mar 2012 12:14:36 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Books]]></category>
+		<category><![CDATA[books]]></category>
+		<category><![CDATA[hentzenwerke publishing]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=12</guid>
+		<description><![CDATA[<p>Big sale on all in-stock printed books at Hentzenwerke Publishing, from March 12 - 18, 2012.</p>
+<p>The post <a rel="nofollow" href="/learn-visual-foxpro/">Learn Visual FoxPro</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">12</post-id>	</item>
+		<item>
+		<title>A VFP Book Wish-List</title>
+		<link>/a-vfp-book-wish-list/</link>
+		<pubDate>Thu, 22 Mar 2007 10:44:02 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Books]]></category>
+		<category><![CDATA[hentzenwerke publishing]]></category>
+		<category><![CDATA[visual foxpro books]]></category>
+
+		<guid isPermaLink="false">/?p=233</guid>
+		<description><![CDATA[<p>Now that we know VFP 9 SP2 (and Sedna) will be the final production version of Visual FoxPro, I&#8217;d like to toss out a couple of thoughts on things I&#8217;d love to see from Hentzenwerke Publishing. 1. Hacker&#8217;s Guide to Visual FoxPro 9.0 The Hacker&#8217;s Guides (VFP6 and VFP7) have always been a great reference for VFP developers, and [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/a-vfp-book-wish-list/">A VFP Book Wish-List</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">233</post-id>	</item>
+		<item>
+		<title>MegaFox&#8230; Still Relevant&#8230; Still Awesome!!!</title>
+		<link>/megafox-still-relevant-still-awesome/</link>
+		<pubDate>Wed, 13 Apr 2005 09:40:33 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Books]]></category>
+
+		<guid isPermaLink="false">/?p=94</guid>
+		<description><![CDATA[<p>I&#8217;ve been stuck lately in what feels like a never-ending project. Doing a lot COM work with VFP, and at times I seem to be spending more time scratching my head than coding. This evening, I decided to stroll through my library of VFP books, and I decided to take another look at MegaFox: 1002 Things [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/megafox-still-relevant-still-awesome/">MegaFox&#8230; Still Relevant&#8230; Still Awesome!!!</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">94</post-id>	</item>
+	</channel>
+</rss>

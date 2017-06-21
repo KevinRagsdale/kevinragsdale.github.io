@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Multithreaded Visual FoxPro</title>
+	<atom:link href="/multithreaded-visual-foxpro/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: Kevin Ragsdale</title>
+		<link>/multithreaded-visual-foxpro/#comment-9209</link>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+		<pubDate>Sat, 11 Apr 2015 19:04:54 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=535#comment-9209</guid>
+		<description><![CDATA[Awesome - thank you for the follow-up!]]></description>
+		<content:encoded><![CDATA[<p>Awesome &#8211; thank you for the follow-up!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: valimaties</title>
+		<link>/multithreaded-visual-foxpro/#comment-9208</link>
+		<dc:creator><![CDATA[valimaties]]></dc:creator>
+		<pubDate>Sat, 11 Apr 2015 18:39:35 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=535#comment-9208</guid>
+		<description><![CDATA[It does. My mistake, i used a listbox to debug, but i forgot that listbox convert two slashes into one :)) sorry... It works very good.]]></description>
+		<content:encoded><![CDATA[<p>It does. My mistake, i used a listbox to debug, but i forgot that listbox convert two slashes into one :)) sorry&#8230; It works very good.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kevin Ragsdale</title>
+		<link>/multithreaded-visual-foxpro/#comment-9207</link>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+		<pubDate>Sat, 11 Apr 2015 12:10:46 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=535#comment-9207</guid>
+		<description><![CDATA[It should, as long as it has the permissions to do so. Do you have any example code?]]></description>
+		<content:encoded><![CDATA[<p>It should, as long as it has the permissions to do so. Do you have any example code?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: valimaties</title>
+		<link>/multithreaded-visual-foxpro/#comment-9205</link>
+		<dc:creator><![CDATA[valimaties]]></dc:creator>
+		<pubDate>Sat, 11 Apr 2015 06:52:07 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=535#comment-9205</guid>
+		<description><![CDATA[Hy.
+How can I manage the UNC paths in multithreaded dll? Seems that it not read this kind of path to files...]]></description>
+		<content:encoded><![CDATA[<p>Hy.<br />
+How can I manage the UNC paths in multithreaded dll? Seems that it not read this kind of path to files&#8230;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: davidjmp@optusnet.com.au</title>
+		<link>/multithreaded-visual-foxpro/#comment-142</link>
+		<dc:creator><![CDATA[davidjmp@optusnet.com.au]]></dc:creator>
+		<pubDate>Thu, 29 Nov 2012 13:29:16 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=535#comment-142</guid>
+		<description><![CDATA[Thank you for your contribution to the Fox Community. Fox Rules!]]></description>
+		<content:encoded><![CDATA[<p>Thank you for your contribution to the Fox Community. Fox Rules!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

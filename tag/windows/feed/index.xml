@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>windows &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/windows/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>A Hyperlink Class: Subclassing the Label Control</title>
+		<link>/a-hyperlink-class-subclassing-the-label-control/</link>
+		<pubDate>Thu, 21 Feb 2013 15:16:54 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[class]]></category>
+		<category><![CDATA[foxpro]]></category>
+		<category><![CDATA[label]]></category>
+		<category><![CDATA[subclass]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=1100</guid>
+		<description><![CDATA[<p>From a series of posts on subclassing Visual FoxPro controls: the Label control.</p>
+<p>The post <a rel="nofollow" href="/a-hyperlink-class-subclassing-the-label-control/">A Hyperlink Class: Subclassing the Label Control</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1100</post-id>	</item>
+		<item>
+		<title>Subclassing Visual FoxPro Base Classes: Label Control</title>
+		<link>/subclassing-visual-foxpro-base-classes-label-control/</link>
+		<pubDate>Wed, 16 Jan 2013 04:14:21 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[class]]></category>
+		<category><![CDATA[label]]></category>
+		<category><![CDATA[subclass]]></category>
+		<category><![CDATA[text]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=1083</guid>
+		<description><![CDATA[<p>From a series of posts on subclassing Visual FoxPro controls: the Label control.</p>
+<p>The post <a rel="nofollow" href="/subclassing-visual-foxpro-base-classes-label-control/">Subclassing Visual FoxPro Base Classes: Label Control</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1083</post-id>	</item>
+		<item>
+		<title>Aero (Glass) Borders For Forms In SCREEN</title>
+		<link>/aero-glass-borders-for-forms-in-screen/</link>
+		<pubDate>Sun, 06 Jan 2013 11:00:33 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[aero]]></category>
+		<category><![CDATA[glass]]></category>
+		<category><![CDATA[SCREEN]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=955</guid>
+		<description><![CDATA[<p>Don't like the form borders on forms shown in SCREEN? Add Aero Glass easily (Windows Vista and Windows 7 only).</p>
+<p>The post <a rel="nofollow" href="/aero-glass-borders-for-forms-in-screen/">Aero (Glass) Borders For Forms In SCREEN</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">955</post-id>	</item>
+		<item>
+		<title>Paint It (Almost) Black</title>
+		<link>/paint-it-almost-black/</link>
+		<pubDate>Fri, 04 Jan 2013 11:00:55 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[color]]></category>
+		<category><![CDATA[foxpro]]></category>
+		<category><![CDATA[label]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=940</guid>
+		<description><![CDATA[<p>Got a label control you want to be black, all the time? Then paint it (almost) black.</p>
+<p>The post <a rel="nofollow" href="/paint-it-almost-black/">Paint It (Almost) Black</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">940</post-id>	</item>
+		<item>
+		<title>Is Your App DPI-Aware?</title>
+		<link>/is-your-app-dpi-aware/</link>
+		<pubDate>Thu, 03 Jan 2013 11:00:25 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[dpi virtualization]]></category>
+		<category><![CDATA[foxpro]]></category>
+		<category><![CDATA[SetProcessDPIAware()]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=925</guid>
+		<description><![CDATA[<p>When you tell Windows Vista (and 7 &#38; 8) that your app is DPI-aware, Windows will not use DPI virtualization for your app and will no longer “lie” when you ask about the DPI settings. Please note that by telling Windows that your app is DPI-aware, it is completely up to your app (you) to [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/is-your-app-dpi-aware/">Is Your App DPI-Aware?</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">925</post-id>	</item>
+	</channel>
+</rss>

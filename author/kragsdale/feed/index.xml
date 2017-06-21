@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Kevin Ragsdale &#8211; Kevin Ragsdale</title>
+	<atom:link href="/author/kragsdale/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Goodbye My Friend &#8211; Lance Washington (1967-2016)</title>
+		<link>/lancewashington/</link>
+		<comments>/lancewashington/#comments</comments>
+		<pubDate>Sat, 24 Sep 2016 11:26:32 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Personal]]></category>
+		<category><![CDATA[friends]]></category>
+		<category><![CDATA[Lance Washington]]></category>
+
+		<guid isPermaLink="false">/?p=2394</guid>
+		<description><![CDATA[<p>Lance Washington 1967-2016 I met my best friend, Lance Washington, while we were working at QVC shopping channel almost thirty years ago.  We worked the overnight shift, answering telephones and taking orders.  I had relocated to Pennsylvania from Tennessee, and kept to myself at work (my southern accent meant I had to repeat everything I said [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/lancewashington/">Goodbye My Friend &#8211; Lance Washington (1967-2016)</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/lancewashington/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">2394</post-id>	</item>
+		<item>
+		<title>2016 In A Nutshell</title>
+		<link>/2016-in-a-nutshell/</link>
+		<comments>/2016-in-a-nutshell/#comments</comments>
+		<pubDate>Thu, 07 Jul 2016 18:57:44 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Personal]]></category>
+
+		<guid isPermaLink="false">/?p=2386</guid>
+		<description><![CDATA[<p>Pretty much sums up the year for me&#8230; &#160;</p>
+<p>The post <a rel="nofollow" href="/2016-in-a-nutshell/">2016 In A Nutshell</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/2016-in-a-nutshell/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">2386</post-id>	</item>
+		<item>
+		<title>Downloads for Craig Boyd&#8217;s Visual FoxPro FLLs</title>
+		<link>/downloads-for-craig-boyds-visual-foxpro-flls/</link>
+		<pubDate>Sat, 06 Jun 2015 17:13:36 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[craig boyd]]></category>
+		<category><![CDATA[doug hennig]]></category>
+		<category><![CDATA[fll]]></category>
+		<category><![CDATA[vfpcompression.fll]]></category>
+		<category><![CDATA[vfpconnection.fll]]></category>
+		<category><![CDATA[vfpencryption.fll]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=2270</guid>
+		<description><![CDATA[<p>I&#8217;ve added a page titled Visual FoxPro FLLs, which contains download and documentation links to Craig Boyd&#8217;s VFPCompression.fll, VFPConnection.fll, and VFPEncryption.fll. You can access the page here, or by selecting the Visual FoxPro FLLs menu item.</p>
+<p>The post <a rel="nofollow" href="/downloads-for-craig-boyds-visual-foxpro-flls/">Downloads for Craig Boyd&#8217;s Visual FoxPro FLLs</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">2270</post-id>	</item>
+		<item>
+		<title>Windows 10, IE Web Browser Control, and FEATURE_BROWSER_EMULATION</title>
+		<link>/windows-10-and-the-web-browser-control/</link>
+		<pubDate>Mon, 01 Jun 2015 16:55:29 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[web browser control]]></category>
+		<category><![CDATA[windows 10]]></category>
+
+		<guid isPermaLink="false">/?p=2259</guid>
+		<description><![CDATA[<p>I&#8217;ve got a Visual FoxPro app that uses the Microsoft Web Browser ActiveX control as the primary UI. A few years ago, I needed to &#8220;upgrade&#8221; the pages being rendered by the Web Browser Control to a more modern look and feel (think HTML5), and found that many of the changes I had made simply weren&#8217;t working [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/windows-10-and-the-web-browser-control/">Windows 10, IE Web Browser Control, and FEATURE_BROWSER_EMULATION</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">2259</post-id>	</item>
+		<item>
+		<title>Southwest Fox 2015 Speakers and Sessions</title>
+		<link>/southwest-fox-2015-speakers-and-sessions/</link>
+		<pubDate>Thu, 07 May 2015 02:40:50 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[conferences]]></category>
+		<category><![CDATA[southwest fox 2015]]></category>
+		<category><![CDATA[southwest xbase++ 2015]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[xbase++]]></category>
+
+		<guid isPermaLink="false">/?p=2248</guid>
+		<description><![CDATA[<p>Speakers and sessions for the Southwest Fox and Southwest Xbase++ conferences have been announced! The Southwest Fox 2015 Conference has fewer speakers and tracks this year (eight and two, respectively), but there is a chance that more speakers could be added, depending on the number of registrations by July 1st. The list of speakers for 2015 [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/southwest-fox-2015-speakers-and-sessions/">Southwest Fox 2015 Speakers and Sessions</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">2248</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>foxforward &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/foxforward/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>I Thought This Blog Was About Visual FoxPro!!!</title>
+		<link>/i-thought-this-blog-was-about-visual-foxpro/</link>
+		<pubDate>Mon, 23 Oct 2006 15:12:24 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[foxforward]]></category>
+		<category><![CDATA[google serp]]></category>
+
+		<guid isPermaLink="false">/?p=200</guid>
+		<description><![CDATA[<p>I like to check out the site statistics for my blog to get an idea of how many people read the postings, which posts are most popular, etc. I also like to check out the referrals, so I can get an idea of &#8220;how&#8221; people are finding the posts. I just found something interesting in [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/i-thought-this-blog-was-about-visual-foxpro/">I Thought This Blog Was About Visual FoxPro!!!</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">200</post-id>	</item>
+		<item>
+		<title>FoxForward Awards and More</title>
+		<link>/foxforward-awards-and-more/</link>
+		<pubDate>Tue, 26 Sep 2006 15:42:09 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[foxforward]]></category>
+
+		<guid isPermaLink="false">/?p=185</guid>
+		<description><![CDATA[<p>Craig Boyd mentioned the FoxForward awards on his blog this morning (thanks for the kind words, Craig!) and I&#8217;d like to take a moment to say &#8220;Thank You&#8221; to everyone who &#8220;voted&#8221; for me. I should also say &#8220;The check is in the mail!&#8221; (Yes, I did try to bribe a few people&#8230;) I reckon I may have gotten [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/foxforward-awards-and-more/">FoxForward Awards and More</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">185</post-id>	</item>
+	</channel>
+</rss>

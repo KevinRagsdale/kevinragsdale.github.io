@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Downloads</title>
+	<atom:link href="/downloads-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: Julius P. Sotomil</title>
+		<link>/downloads-2/#comment-9566</link>
+		<dc:creator><![CDATA[Julius P. Sotomil]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2016 08:33:49 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=1416#comment-9566</guid>
+		<description><![CDATA[Wonderful!!!! Thank you!]]></description>
+		<content:encoded><![CDATA[<p>Wonderful!!!! Thank you!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

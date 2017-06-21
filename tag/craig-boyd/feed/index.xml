@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>craig boyd &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/craig-boyd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Downloads for Craig Boyd&#8217;s Visual FoxPro FLLs</title>
+		<link>/downloads-for-craig-boyds-visual-foxpro-flls/</link>
+		<pubDate>Sat, 06 Jun 2015 17:13:36 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[craig boyd]]></category>
+		<category><![CDATA[doug hennig]]></category>
+		<category><![CDATA[fll]]></category>
+		<category><![CDATA[vfpcompression.fll]]></category>
+		<category><![CDATA[vfpconnection.fll]]></category>
+		<category><![CDATA[vfpencryption.fll]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=2270</guid>
+		<description><![CDATA[<p>I&#8217;ve added a page titled Visual FoxPro FLLs, which contains download and documentation links to Craig Boyd&#8217;s VFPCompression.fll, VFPConnection.fll, and VFPEncryption.fll. You can access the page here, or by selecting the Visual FoxPro FLLs menu item.</p>
+<p>The post <a rel="nofollow" href="/downloads-for-craig-boyds-visual-foxpro-flls/">Downloads for Craig Boyd&#8217;s Visual FoxPro FLLs</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">2270</post-id>	</item>
+		<item>
+		<title>Craig Boyd&#8217;s Compression FLL vs. Windows Vista</title>
+		<link>/craig-boyds-compression-fll-vs-windows-vista/</link>
+		<pubDate>Fri, 02 Feb 2007 20:17:27 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Visual FoxPro]]></category>
+		<category><![CDATA[craig boyd]]></category>
+		<category><![CDATA[vfpcompression.fll]]></category>
+		<category><![CDATA[vista sucks]]></category>
+		<category><![CDATA[visual foxpro in windows vista]]></category>
+
+		<guid isPermaLink="false">/?p=225</guid>
+		<description><![CDATA[<p>I&#8217;ve been running Windows Vista Business this week.  A bit sluggish on my machine versus Windows XP, but overall I haven&#8217;t had any major issues with it. Until today. Today I downloaded a zipped file from the internet. It was 4.1 MB (zipped) and 10.4 MB after extraction. What killed me was the Extraction Wizard. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/craig-boyds-compression-fll-vs-windows-vista/">Craig Boyd&#8217;s Compression FLL vs. Windows Vista</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">225</post-id>	</item>
+	</channel>
+</rss>

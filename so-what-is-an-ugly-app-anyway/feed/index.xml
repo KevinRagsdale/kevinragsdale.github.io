@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: So, What Is An Ugly App Anyway?</title>
+	<atom:link href="/so-what-is-an-ugly-app-anyway/feed/" rel="self" type="application/rss+xml" />
+	<link>/so-what-is-an-ugly-app-anyway/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: &#124; Kevin Ragsdale</title>
+		<link>/so-what-is-an-ugly-app-anyway/#comment-166</link>
+		<dc:creator><![CDATA[&#124; Kevin Ragsdale]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 03:59:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=796#comment-166</guid>
+		<description><![CDATA[[...] Since I&#8217;ve been blogging a bit for the past few days, I thought I&#8217;d check my blog stats and see where my traffic is coming from. Interestingly, I found a few hits today that came from a Google Images Search. The keywords/phrase for the searches were &#8220;it&#8217;s not fair that I&#8217;m ugly&#8221; &#8212; so I did a Google Images Search on that phrase and sure enough, on the first page of the results was an image from one of my &#8220;ugly&#8221; forms from a recent blog post. [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] Since I&#8217;ve been blogging a bit for the past few days, I thought I&#8217;d check my blog stats and see where my traffic is coming from. Interestingly, I found a few hits today that came from a Google Images Search. The keywords/phrase for the searches were &#8220;it&#8217;s not fair that I&#8217;m ugly&#8221; &#8212; so I did a Google Images Search on that phrase and sure enough, on the first page of the results was an image from one of my &#8220;ugly&#8221; forms from a recent blog post. [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

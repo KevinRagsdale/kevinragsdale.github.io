@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>visual foxpro promo &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/visual-foxpro-promo/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>(Yet Another) Visual FoxPro Promo</title>
+		<link>/yet-another-visual-foxpro-promo/</link>
+		<pubDate>Tue, 24 Oct 2006 04:33:10 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Visual FoxPro]]></category>
+		<category><![CDATA[visual foxpro promo]]></category>
+
+		<guid isPermaLink="false">/?p=205</guid>
+		<description><![CDATA[<p>Nothing to do tonight, since Monday Night Football just isn&#8217;t the same on ESPN, so I put together another Visual FoxPro Promo. Whatever Happened to FoxPro? (1 min, 14 seconds) Soapbox on MSN (the MSN video site): Whatever Happened to FoxPro? Enjoy! This post originally appeared on the Foxite Weblogs site.</p>
+<p>The post <a rel="nofollow" href="/yet-another-visual-foxpro-promo/">(Yet Another) Visual FoxPro Promo</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">205</post-id>	</item>
+	</channel>
+</rss>

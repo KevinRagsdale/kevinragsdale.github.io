@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<base href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Desktop Alerts Tip: Building App-Specific Alert EXE&#039;s</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v4.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/desktop-alerts-tip-building-app-specific-alert-exes/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Desktop Alerts Tip: Building App-Specific Alert EXE&#039;s" />
+<meta property="og:description" content="Compile your own application-specific version of the Desktop Alerts for each application, and include it (along with ALERT.WAV) with your installer." />
+<meta property="og:url" content="kevinragsdale.github.io/desktop-alerts-tip-building-app-specific-alert-exes/" />
+<meta property="og:site_name" content="Kevin Ragsdale" />
+<meta property="article:tag" content="codeplex" />
+<meta property="article:tag" content="desktop alerts" />
+<meta property="article:tag" content="vfpx" />
+<meta property="article:tag" content="visual foxpro" />
+<meta property="article:section" content="Desktop Alerts" />
+<meta property="article:published_time" content="2011-12-20T19:57:34-05:00" />
+<meta property="og:image" content="http://kevinragsdale.info/wp-content/uploads/2012/04/build.png" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='editor-style-css'  href='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/themes/editor/style.css?ver=4.8' type='text/css' media='all' />
+<link rel='stylesheet' id='editor-font-awesome-css-css'  href='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/themes/editor/inc/fontawesome/font-awesome.css?ver=4.1.0' type='text/css' media='screen' />
+<!--[if IE]>
+<link rel='stylesheet' id='ie7-style-css'  href='kevinragsdale.github.io/wp-content/themes/editor/inc/styles/ie.css?ver=4.8' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='editor-fonts-css'  href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C700%2C400italic%2C600italic%2C700italic%7CRoboto+Condensed%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/plugins/jetpack/css/jetpack.css?ver=5.0' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-json/' />
+
+ 
+
+<link rel='shortlink' href='https://wp.me/p2kDuJ-j' />
+
+
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style><link rel="amphtml" href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/desktop-alerts-tip-building-app-specific-alert-exes/amp/" />
+<!-- Styles cached and displayed inline for speed. Generated by http://stylesplugin.com -->
+<style type="text/css" id="styles-plugin-css">
+
+</style>
+</head>
+
+<body class="post-template-default single single-post postid-19 single-format-standard styles">
+
+<div id="page" class="hfeed site container">
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<!-- Get sidebar color option (Appearance -> Customize -> Theme Options) -->
+		<header id="masthead" class="site-header dark" role="banner">
+		<!-- Tab navigation -->
+		<ul class="toggle-bar" role="tablist">
+			<!-- Main navigation -->
+			<li id="panel-1" class="current" role="presentation">
+				<a href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true" class="current nav-toggle" data-tab="tab-1"><i class="fa fa-bars"></i><span class="screen-reader-text">View menu</span></a>
+			</li>
+
+			<!-- Featured Posts navigation -->
+							<li id="panel-2" role="presentation">
+					<a href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false" data-tab="tab-2"><i class="fa fa-thumb-tack"></i><span class="screen-reader-text">View featured posts</span></a>
+				</li>
+			
+			<!-- Sidebar widgets navigation -->
+			<li id="panel-3" role="presentation">
+				<a href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" class="folder-toggle" data-tab="tab-3"><i class="fa fa-folder"></i><i class="fa fa-folder-open"></i><span class="screen-reader-text">View sidebar</span></a>
+			</li>
+		</ul>
+
+		<div id="tabs" class="toggle-tabs">
+			<div class="site-header-inside">
+				<!-- Logo, description and main navigation -->
+				<div id="tab-1" class="tab-content current fadeIn">
+					<div class="site-branding">
+						<!-- Get the site branding -->
+													<h1 class="site-title"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/" rel="home">Kevin Ragsdale</a></h1>
+							<h2 class="site-description">FoxPro Programming and Visual FoxPro 9</h2>
+											</div>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<div class="menu-nav-container"><ul id="menu-nav" class="menu"><li id="menu-item-1421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1421"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/downloads-2/">Downloads</a></li>
+<li id="menu-item-1417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1417"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/visual-foxpro-books/">Visual FoxPro Books</a></li>
+<li id="menu-item-2269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2269"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/visual-foxpro-flls/">Visual FoxPro FLLs</a></li>
+<li id="menu-item-1196" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1196"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/tips-and-tricks-to-improve-your-apps-ui/">It&#8217;s So, Uh, Gray</a></li>
+</ul></div>					</nav><!-- #site-navigation -->
+
+									</div><!-- #tab-1 -->
+
+				<!-- Featured Posts template (template-featured-posts.php) -->
+				
+									<div id="tab-2" class="widget-area tab-content animated fadeIn">
+						<div class="widget featured-posts-widget">
+							<h2 class="widget-title">Multithreaded Visual FoxPro</h2>
+
+							<div class="featured-posts">
+							    
+																	<div class="featured-post">
+																	            <h3><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/please-release-me/" rel="bookmark">Please RELEASE Me</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/please-release-me/" rel="bookmark"><time class="entry-date published" datetime="2012-07-24T07:51:37+00:00">July 24, 2012</time><time class="updated" datetime="2014-06-07T09:59:24+00:00">June 7, 2014</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/author/kragsdale/">Kevin Ragsdale</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/easy-multithreading-with-visual-foxpro/" rel="bookmark">Easy Multithreading with Visual FoxPro</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/easy-multithreading-with-visual-foxpro/" rel="bookmark"><time class="entry-date published" datetime="2012-07-14T07:09:03+00:00">July 14, 2012</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/author/kragsdale/">Kevin Ragsdale</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/shameless-self-promotion/" rel="bookmark">Shameless Self-Promotion</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/shameless-self-promotion/" rel="bookmark"><time class="entry-date published" datetime="2012-06-12T13:06:43+00:00">June 12, 2012</time><time class="updated" datetime="2015-06-06T08:36:56+00:00">June 6, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/author/kragsdale/">Kevin Ragsdale</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/christof-is-a-freaking-genius/" rel="bookmark">Christof Is A Freaking Genius</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/christof-is-a-freaking-genius/" rel="bookmark"><time class="entry-date published" datetime="2010-09-01T09:10:15+00:00">September 1, 2010</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/author/kragsdale/">Kevin Ragsdale</a></span>								            </div>
+							            </div>
+									</div>
+																							</div><!-- .featured-posts -->
+						</div><!-- .featured-posts-widget -->
+					</div><!-- #tab-2 .widget-area -->
+				
+				<!-- Sidebar widgets -->
+				<div id="tab-3" class="tab-content animated fadeIn" role="tabpanel" aria-labelledby="panel-3" aria-hidden="true">
+						<div id="secondary" class="widget-area" role="complementary">
+		<aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-2"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/books/" title="There are many great books about Visual FoxPro. My favorites are from Hentzenwerke Publishing. All of the titles from Hentzenwerke are well-written, concise, and provide excellent information. Highly recommended!">Books</a> (3)
+</li>
+	<li class="cat-item cat-item-3"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/conferences-blog/" >Conferences</a> (28)
+</li>
+	<li class="cat-item cat-item-4"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/desktop-alerts/" >Desktop Alerts</a> (9)
+</li>
+	<li class="cat-item cat-item-5"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/tips-and-tricks-to-improve-your-apps-ui/" title="Posts from my Southwest Fox 2011 session titled, &quot;It&#039;s so, uh, gray... Tips &amp; Tricks to Improve Your Apps Interface&quot;">It&#039;s So, Uh, Gray</a> (19)
+</li>
+	<li class="cat-item cat-item-6"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/multithreaded-visual-foxpro/" title="Posts related to my  Southwest Fox 2011 session titled, &quot;Easy Multithreading with Visual FoxPro&quot; (based on Christof Wollenhaupt&#039;s DMULT.DLL)">Multithreaded Visual FoxPro</a> (4)
+</li>
+	<li class="cat-item cat-item-135"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/personal/" >Personal</a> (9)
+</li>
+	<li class="cat-item cat-item-7"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/programming/" >Programming</a> (26)
+</li>
+	<li class="cat-item cat-item-8"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/screencasts/" title="Screencasts on a variety of topics related to Visual FoxPro programming">Screencasts</a> (5)
+</li>
+	<li class="cat-item cat-item-9"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/visual-fox-pro-user-groups/" >User Groups</a> (5)
+</li>
+	<li class="cat-item cat-item-141"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/visual-foxpro/" title="General items related to Visual FoxPro">Visual FoxPro</a> (15)
+</li>
+		</ul>
+</aside><aside id="text-8" class="widget widget_text">			<div class="textwidget"><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-875609-8', 'auto');
+  ga('send', 'pageview');
+
+</script></div>
+		</aside>	</div><!-- #secondary -->
+				</div><!-- #tab-3 -->
+			</div><!-- .site-header-inside -->
+		</div><!-- #tabs -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content fadeInFast">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-19" class="post post-19 type-post status-publish format-standard hentry category-desktop-alerts tag-codeplex tag-desktop-alerts-2 tag-vfpx tag-visual-foxpro-2">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/desktop-alerts-tip-building-app-specific-alert-exes/" rel="bookmark"><time class="entry-date published" datetime="2011-12-20T19:57:34+00:00">December 20, 2011</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/author/kragsdale/">Kevin Ragsdale</a></span>		</div><!-- .entry-meta -->
+		
+		<h1 class="entry-title">Desktop Alerts Tip: Building App-Specific Alert EXE&#8217;s</h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+			<div class="entry-excerpt">
+			<p>Compile your own application-specific version of the Desktop Alerts for each application, and include it (along with ALERT.WAV) with your installer.</p>
+		</div>
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/category/desktop-alerts/" rel="category tag">Desktop Alerts</a></li>
+							<li class="meta-tag"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/tag/codeplex/" rel="tag">codeplex</a>, <a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/tag/desktop-alerts-2/" rel="tag">desktop alerts</a>, <a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/tag/vfpx/" rel="tag">vfpx</a>, <a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/tag/visual-foxpro-2/" rel="tag">visual foxpro</a></li>
+							</ul>
+</div>
+	<div class="entry-content">
+		<p>When I first wrote the Desktop Alerts, I pictured a perfect world where everyone had one set of VFP runtimes and the Desktop Alerts would be installed, once, on every computer in the world.</p>
+<p>Alas, the world is not perfect. Some apps install VFPALERT.EXE to the app folder, some do not. Some developers add new functionality and recompile the VFPALERT project, some do not. Some recompile it in VFP9SP2, some do not.</p>
+<p>To make things easier on yourself and your fellow developers, I recommend compiling your own application-specific version of the Desktop Alerts for each application, and including it (along with ALERT.WAV) with your installer.</p>
+<p>Let’s say I’ve written the following three software products, and I want to include Desktop Alerts functionality with all three:</p>
+<p>ABC Accounting<br />
+BCD Bookkeeper<br />
+CDE Customer Manager</p>
+<p>On the one hand, I could install the Desktop Alerts to one specific location, and all three products would use that one install.</p>
+<p>But, if my customer is using software from another vendor that also uses the Desktop Alerts (and, especially a modified/recompiled version), I may not get the same functionality I expected.</p>
+<p>So, since I have three different products, I’m going to create three versions of the Desktop Alerts COM EXE Server, and install each one with its respective product.</p>
+<p><strong>MAKE SURE TO SELECT REGENERATE COMPONENT IDs IN THE PROJECT BUILD WINDOW IF YOU ARE DOING THIS!!!</strong></p>
+<p><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/04/build.png"><img class="alignnone size-full wp-image-24" title="build" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/04/build.png?resize=369%2C278" alt="Build Dialog in Visual FoxPro" srcset="https://i1.wp.com//wp-content/uploads/2012/04/build.png?w=369&amp;ssl=1 369w, https://i1.wp.com//wp-content/uploads/2012/04/build.png?resize=300%2C226&amp;ssl=1 300w" sizes="(max-width: 369px) 100vw, 369px" data-recalc-dims="1" /></a></p>
+<p>&nbsp;</p>
+<p>I’ll take the original source code (<a href="http://vfpx.codeplex.com/releases/view/79034" target="_blank">from the VFPAlert.zip file from VFPX</a>), and compile it three times (<strong>with new Component IDs for each one</strong>) using the following filenames:</p>
+<p>ABCALERT.EXE<br />
+BCDALERT.EXE<br />
+CDEALERT.EXE</p>
+<p>Then I can distribute each one with their respective product.</p>
+<p>In the ABC Accounting software, I would use:</p>
+<p>oAlertMgr = CREATEOBJECT(&#8220;ABCAlert.AlertManager&#8221;)</p>
+<p>Instead of the usual &#8220;VFPAlert.AlertManager&#8221;.</p>
+<p>This also frees me up to recompile the alerts in VFP8 (if my app is written in VFP8), without having to rely on installing VFP9SP2 runtimes along with my app just to support the alerts.</p>
+<p>All I need at this point is to add ABCALERT.EXE and ALERT.WAV to my ABC Accounting app installer (and make sure to run ABCALERT.EXE with the REGSERVER flag during the install) and I have an all-new, app-specific version of Desktop Alerts just for my app – without having to worry about another vendor’s application &#8220;taking over&#8221; the Desktop Alerts.</p>
+			</div><!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+				<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<div class="nav-previous"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/desktop-alerts-1-0-0-production-release/" rel="prev"><span class="meta-nav">&larr; Previous Post</span> Desktop Alerts 1.0.0 (Production Release)</a></div><div class="nav-next"><a href="/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/learn-visual-foxpro/" rel="next"><span class="meta-nav">Next Post &rarr;</span> Learn Visual FoxPro</a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+			
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a class="powered-by" href="http://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: editor by <a href="https://array.is/">Array</a>		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201725'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2017Junaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.8'></script>
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/themes/editor/js/jquery.fitvids.js?ver=20140820'></script>
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/themes/editor/js/editor.js?ver=20120206'></script>
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-includes/js/wp-embed.min.js?ver=4.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"kevinragsdale"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/uploads/2017/06/wp-static-html-output-1-1498057010-kragsdale/desktop-alerts-tip-building-app-specific-alert-exes/kevinragsdale.github.io/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.8'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201725.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.0',blog:'34471053',post:'19',tz:'-5',srv:''} ]);
+	_stq.push([ 'clickTrackerInit', '34471053', '19' ]);
+</script>
+
+</body>
+</html>

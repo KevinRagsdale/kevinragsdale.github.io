@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>scary error messages &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/scary-error-messages/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>What&#8217;s the Scariest Error Message You&#8217;ve Ever Seen?</title>
+		<link>/whats-the-scariest-error-message-youve-ever-seen/</link>
+		<comments>/whats-the-scariest-error-message-youve-ever-seen/#comments</comments>
+		<pubDate>Wed, 11 Apr 2007 18:33:44 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[catastrophic failure]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[scary error messages]]></category>
+
+		<guid isPermaLink="false">/?p=241</guid>
+		<description><![CDATA[<p>Here&#8217;s mine: Right in the middle of a presentation, too. What&#8217;s the scariest error message you&#8217;ve ever seen? This post originally appeared on the Foxite Weblogs site.</p>
+<p>The post <a rel="nofollow" href="/whats-the-scariest-error-message-youve-ever-seen/">What&#8217;s the Scariest Error Message You&#8217;ve Ever Seen?</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/whats-the-scariest-error-message-youve-ever-seen/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">241</post-id>	</item>
+	</channel>
+</rss>

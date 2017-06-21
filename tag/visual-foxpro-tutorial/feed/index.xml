@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>visual foxpro tutorial &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/visual-foxpro-tutorial/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Learn Visual FoxPro</title>
+		<link>/learn-visual-foxpro-2/</link>
+		<pubDate>Thu, 21 Dec 2006 14:33:56 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Visual FoxPro]]></category>
+		<category><![CDATA[learn visual foxpro]]></category>
+		<category><![CDATA[visual foxpro learning]]></category>
+		<category><![CDATA[visual foxpro tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=219</guid>
+		<description><![CDATA[<p>I was trolling through Craig Bailey&#8217;s Visual FoxPro Spot on FanPop yesterday and stumbled across a new web site dedicated to providing screencasts for learning Visual FoxPro: Free Visual FoxPro Videos There are currently eight videos, which can be viewed online or downloaded for offline viewing. They are primarily aimed at people who are new to VFP. From the home page: [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/learn-visual-foxpro-2/">Learn Visual FoxPro</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">219</post-id>	</item>
+	</channel>
+</rss>

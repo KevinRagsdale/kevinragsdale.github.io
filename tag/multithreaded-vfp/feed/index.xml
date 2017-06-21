@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>multithreaded vfp &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/multithreaded-vfp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Online FoxPro Users Group Meeting Tuesday, August 20th</title>
+		<link>/online-foxpro-user-group-meeting-tuesday-august-20th/</link>
+		<pubDate>Thu, 15 Aug 2013 12:55:48 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[User Groups]]></category>
+		<category><![CDATA[multithreaded vfp]]></category>
+		<category><![CDATA[ofug]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=1130</guid>
+		<description><![CDATA[<p>I'll be presenting "Easy Multithreading with Visual FoxPro" on Tuesday, August 20th.</p>
+<p>The post <a rel="nofollow" href="/online-foxpro-user-group-meeting-tuesday-august-20th/">Online FoxPro Users Group Meeting Tuesday, August 20th</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1130</post-id>	</item>
+		<item>
+		<title>Please RELEASE Me</title>
+		<link>/please-release-me/</link>
+		<comments>/please-release-me/#comments</comments>
+		<pubDate>Tue, 24 Jul 2012 12:51:37 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Multithreaded Visual FoxPro]]></category>
+		<category><![CDATA[collection class]]></category>
+		<category><![CDATA[multithreaded vfp]]></category>
+
+		<guid isPermaLink="false">/?p=683</guid>
+		<description><![CDATA[<p>Add a RELEASE method to callback objects to easily keep track of running threads.</p>
+<p>The post <a rel="nofollow" href="/please-release-me/">Please RELEASE Me</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/please-release-me/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">683</post-id>	</item>
+		<item>
+		<title>Easy Multithreading with Visual FoxPro</title>
+		<link>/easy-multithreading-with-visual-foxpro/</link>
+		<comments>/easy-multithreading-with-visual-foxpro/#comments</comments>
+		<pubDate>Sat, 14 Jul 2012 12:09:03 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Multithreaded Visual FoxPro]]></category>
+		<category><![CDATA[multithreaded vfp]]></category>
+
+		<guid isPermaLink="false">/?p=546</guid>
+		<description><![CDATA[<p>Source code, slides and whitepaper from my "Easy Multithreading With Visual FoxPro" session now available for download.</p>
+<p>The post <a rel="nofollow" href="/easy-multithreading-with-visual-foxpro/">Easy Multithreading with Visual FoxPro</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/easy-multithreading-with-visual-foxpro/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">546</post-id>	</item>
+		<item>
+		<title>Shameless Self-Promotion</title>
+		<link>/shameless-self-promotion/</link>
+		<comments>/shameless-self-promotion/#comments</comments>
+		<pubDate>Tue, 12 Jun 2012 18:06:43 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[Multithreaded Visual FoxPro]]></category>
+		<category><![CDATA[multithreaded vfp]]></category>
+		<category><![CDATA[speaking]]></category>
+		<category><![CDATA[user group]]></category>
+
+		<guid isPermaLink="false">/?p=174</guid>
+		<description><![CDATA[<p>I'll be presenting the "Easy Multithreading with Visual FoxPro" session I did at Southwest Fox 2011 at the Atlanta FoxPro Users Group on June 21, 2012.</p>
+<p>The post <a rel="nofollow" href="/shameless-self-promotion/">Shameless Self-Promotion</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/shameless-self-promotion/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">174</post-id>	</item>
+		<item>
+		<title>Christof Is A Freaking Genius</title>
+		<link>/christof-is-a-freaking-genius/</link>
+		<pubDate>Wed, 01 Sep 2010 14:10:15 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[Multithreaded Visual FoxPro]]></category>
+		<category><![CDATA[christof wollenhaupt]]></category>
+		<category><![CDATA[multithreaded vfp]]></category>
+		<category><![CDATA[southwest 2010]]></category>
+
+		<guid isPermaLink="false">/?p=292</guid>
+		<description><![CDATA[<p>A cool part of the Southwest Fox conference last year was a couple of bonus sessions called Show Us Your App, where several FoxPro developers were given an opportunity to spend 5 to 10 minutes showing off things they’ve worked on. I showed one of my apps, and focused primarily on how easy it was to add multi-threading [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/christof-is-a-freaking-genius/">Christof Is A Freaking Genius</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">292</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: A Quick Note About &#8220;It&#8217;s So, Uh, Gray&#8221;</title>
+	<atom:link href="/a-quick-note-about-its-so-uh-gray/feed/" rel="self" type="application/rss+xml" />
+	<link>/a-quick-note-about-its-so-uh-gray/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: Respecting User&#8217;s Windows Settings &#124; Kevin Ragsdale</title>
+		<link>/a-quick-note-about-its-so-uh-gray/#comment-164</link>
+		<dc:creator><![CDATA[Respecting User&#8217;s Windows Settings &#124; Kevin Ragsdale]]></dc:creator>
+		<pubDate>Sat, 29 Dec 2012 11:08:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=761#comment-164</guid>
+		<description><![CDATA[[...] tip is exactly what I was talking about in the &#8220;quick note about this [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] tip is exactly what I was talking about in the &#8220;quick note about this [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: So, What Is An Ugly App Anyway? &#124; Kevin Ragsdale</title>
+		<link>/a-quick-note-about-its-so-uh-gray/#comment-163</link>
+		<dc:creator><![CDATA[So, What Is An Ugly App Anyway? &#124; Kevin Ragsdale]]></dc:creator>
+		<pubDate>Fri, 28 Dec 2012 11:01:55 +0000</pubDate>
+		<guid isPermaLink="false">/?p=761#comment-163</guid>
+		<description><![CDATA[[...] eventually get a support call from someone who uses a high contrast theme. I mentioned in an earlier post that beauty is in the eye of the beholder &#8211; when we add accessibility into the equation,  we [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] eventually get a support call from someone who uses a high contrast theme. I mentioned in an earlier post that beauty is in the eye of the beholder &#8211; when we add accessibility into the equation,  we [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

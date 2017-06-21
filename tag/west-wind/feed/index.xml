@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>west-wind &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/west-wind/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Google Docs with Visual FoxPro</title>
+		<link>/google-docs-with-visual-foxpro/</link>
+		<pubDate>Sun, 19 Jul 2009 16:40:30 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[west-wind]]></category>
+
+		<guid isPermaLink="false">/?p=276</guid>
+		<description><![CDATA[<p>One of my earlier blog posts I could not recreate was about accessing the Google Docs API with Visual FoxPro. I re-did the screencast for it (watch it here), and also posted the code examples here (13.9 kb). You’ll need the West-Wind Client Tools to run the demo (you can download a shareware version here). I’m thinking about reworking the code to [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/google-docs-with-visual-foxpro/">Google Docs with Visual FoxPro</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">276</post-id>	</item>
+	</channel>
+</rss>

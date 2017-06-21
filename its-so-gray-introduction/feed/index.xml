@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: It&#8217;s So Gray: Introduction</title>
+	<atom:link href="/its-so-gray-introduction/feed/" rel="self" type="application/rss+xml" />
+	<link>/its-so-gray-introduction/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: Andrew</title>
+		<link>/its-so-gray-introduction/#comment-165</link>
+		<dc:creator><![CDATA[Andrew]]></dc:creator>
+		<pubDate>Thu, 27 Dec 2012 08:29:49 +0000</pubDate>
+		<guid isPermaLink="false">/?p=769#comment-165</guid>
+		<description><![CDATA[Hah! I love &quot;The FoxPro&quot; comment - I had a client always refer to their app as &quot;Fox&quot; because you always started it by clicking on &quot;The Fox&quot;.]]></description>
+		<content:encoded><![CDATA[<p>Hah! I love &#8220;The FoxPro&#8221; comment &#8211; I had a client always refer to their app as &#8220;Fox&#8221; because you always started it by clicking on &#8220;The Fox&#8221;.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

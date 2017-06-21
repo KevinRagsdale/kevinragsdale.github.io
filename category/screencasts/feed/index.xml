@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Screencasts &#8211; Kevin Ragsdale</title>
+	<atom:link href="/category/screencasts/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Have You Seen My Segoe?</title>
+		<link>/have-you-seen-my-segoe/</link>
+		<pubDate>Wed, 09 Jan 2013 11:00:47 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Screencasts]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[properties]]></category>
+		<category><![CDATA[segoe ui]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[windows 8]]></category>
+
+		<guid isPermaLink="false">/?p=1056</guid>
+		<description><![CDATA[<p>My "Segoe UI" font is missing from the FontName dropdown in the Properties window when running Visual FoxPro in Windows 8. Anyone else seen this?</p>
+<p>The post <a rel="nofollow" href="/have-you-seen-my-segoe/">Have You Seen My Segoe?</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1056</post-id>	</item>
+		<item>
+		<title>One Ugly App&#8230; LIVE!!!</title>
+		<link>/one-ugly-app-live/</link>
+		<pubDate>Mon, 07 Jan 2013 11:00:49 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[It's So, Uh, Gray]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Screencasts]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[youtube]]></category>
+
+		<guid isPermaLink="false">/?p=1018</guid>
+		<description><![CDATA[<p>There's only about 100 people in the world that have seen my ugly app in-person, so I decided to do a screencast to show it off.</p>
+<p>The post <a rel="nofollow" href="/one-ugly-app-live/">One Ugly App&#8230; LIVE!!!</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1018</post-id>	</item>
+		<item>
+		<title>Flicker-Free Web Pages (no javascript required)</title>
+		<link>/flicker-free-web-pages-no-javascript-required/</link>
+		<pubDate>Mon, 28 Apr 2008 03:27:53 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Screencasts]]></category>
+		<category><![CDATA[asp.net ajax]]></category>
+		<category><![CDATA[web]]></category>
+
+		<guid isPermaLink="false">/?p=265</guid>
+		<description><![CDATA[<p>I&#8217;ve spent the last few weeks playing with ASP.NET 2.0, and I&#8217;ve enjoyed using the AutoPostBack feature of the various server controls. But one thing that drives me nuts is flickering web pages from the aforementioned AutoPostBack-enabled server controls, especially in the &#8220;Web 2.0 &#8211; Everything Is AJAX And If It&#8217;s Not It&#8217;s Just Crap&#8221; [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/flicker-free-web-pages-no-javascript-required/">Flicker-Free Web Pages (no javascript required)</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+<enclosure url="http://download.microsoft.com/download/0/f/6/0f651a0f-6f2b-4497-b061-e1b2825e22e0/MSAJAX-ToDoList.wmv" length="43621543" type="video/asf" />
+	<post-id xmlns="com-wordpress:feed-additions:1">265</post-id>	</item>
+		<item>
+		<title>Screencast: Desktop Alert Callbacks</title>
+		<link>/screencast-desktop-alert-callbacks/</link>
+		<pubDate>Thu, 28 Sep 2006 22:39:10 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Screencasts]]></category>
+
+		<guid isPermaLink="false">/?p=189</guid>
+		<description><![CDATA[<p>I&#8217;ve posted a new screencast (10 minutes, 48 seconds) which delves a little deeper into the callback functionality of the Desktop Alerts system. It starts with a demo of the Desktop Alerts from Microsoft Excel, then looks at the code behind the spreadsheet, then digs a bit deeper into the SetCallback() method of the Alert class. I [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/screencast-desktop-alert-callbacks/">Screencast: Desktop Alert Callbacks</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">189</post-id>	</item>
+		<item>
+		<title>Screencast: Introducing Desktop Alerts</title>
+		<link>/screencast-introducing-desktop-alerts/</link>
+		<pubDate>Mon, 25 Sep 2006 15:51:43 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[Screencasts]]></category>
+
+		<guid isPermaLink="false">/?p=145</guid>
+		<description><![CDATA[<p>A short (51 seconds) screencast introducing the Desktop Alerts.</p>
+<p>The post <a rel="nofollow" href="/screencast-introducing-desktop-alerts/">Screencast: Introducing Desktop Alerts</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">145</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>conferences &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/conferences/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Southwest Fox 2015 Speakers and Sessions</title>
+		<link>/southwest-fox-2015-speakers-and-sessions/</link>
+		<pubDate>Thu, 07 May 2015 02:40:50 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[conferences]]></category>
+		<category><![CDATA[southwest fox 2015]]></category>
+		<category><![CDATA[southwest xbase++ 2015]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+		<category><![CDATA[xbase++]]></category>
+
+		<guid isPermaLink="false">/?p=2248</guid>
+		<description><![CDATA[<p>Speakers and sessions for the Southwest Fox and Southwest Xbase++ conferences have been announced! The Southwest Fox 2015 Conference has fewer speakers and tracks this year (eight and two, respectively), but there is a chance that more speakers could be added, depending on the number of registrations by July 1st. The list of speakers for 2015 [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/southwest-fox-2015-speakers-and-sessions/">Southwest Fox 2015 Speakers and Sessions</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">2248</post-id>	</item>
+	</channel>
+</rss>

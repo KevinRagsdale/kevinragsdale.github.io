@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Creating a &#8220;Fading&#8221; Form</title>
+	<atom:link href="/creating-a-fading-form/feed/" rel="self" type="application/rss+xml" />
+	<link>/creating-a-fading-form/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Thu, 29 Sep 2016 15:19:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>By: &#8220;So, Where Ya Been?&#8221; &#124; Kevin Ragsdale</title>
+		<link>/creating-a-fading-form/#comment-148</link>
+		<dc:creator><![CDATA[&#8220;So, Where Ya Been?&#8221; &#124; Kevin Ragsdale]]></dc:creator>
+		<pubDate>Sun, 22 Jul 2012 14:38:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=83#comment-148</guid>
+		<description><![CDATA[[...] the process of searching, I found that an old blog post of mine was used as a reference for a patent Microsoft was granted in August of last [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] the process of searching, I found that an old blog post of mine was used as a reference for a patent Microsoft was granted in August of last [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

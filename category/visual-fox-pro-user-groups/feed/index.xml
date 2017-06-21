@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>User Groups &#8211; Kevin Ragsdale</title>
+	<atom:link href="/category/visual-fox-pro-user-groups/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Online FoxPro Users Group Meeting &#8211; Tuesday, December 17th</title>
+		<link>/online-foxpro-users-group-meeting-tuesday-december-17th/</link>
+		<pubDate>Mon, 16 Dec 2013 20:05:55 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[User Groups]]></category>
+		<category><![CDATA[doug hennig]]></category>
+		<category><![CDATA[ofug]]></category>
+		<category><![CDATA[unit testing]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=1266</guid>
+		<description><![CDATA[<p>UPDATE: The meeting was recorded and is available on the OFUG YouTube Channel.  OFUG (Online Visual FoxPro Users Group) meets Tuesday, December 17th, at 8:30PM (EST). If you’re not sure what time that is in your time zone, you can find it here. Doug Hennig will present &#8220;Unit Testing&#8221;, which I believe he recently presented at German DevCon. I know many [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/online-foxpro-users-group-meeting-tuesday-december-17th/">Online FoxPro Users Group Meeting &#8211; Tuesday, December 17th</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1266</post-id>	</item>
+		<item>
+		<title>Online FoxPro Users Group Meeting Tuesday, August 20th</title>
+		<link>/online-foxpro-user-group-meeting-tuesday-august-20th/</link>
+		<pubDate>Thu, 15 Aug 2013 12:55:48 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[User Groups]]></category>
+		<category><![CDATA[multithreaded vfp]]></category>
+		<category><![CDATA[ofug]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=1130</guid>
+		<description><![CDATA[<p>I'll be presenting "Easy Multithreading with Visual FoxPro" on Tuesday, August 20th.</p>
+<p>The post <a rel="nofollow" href="/online-foxpro-user-group-meeting-tuesday-august-20th/">Online FoxPro Users Group Meeting Tuesday, August 20th</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1130</post-id>	</item>
+		<item>
+		<title>OFUG (Online FoxPro Users Group) Meeting Tonight</title>
+		<link>/ofug-online-foxpro-user-group-meeting-tonight/</link>
+		<pubDate>Tue, 16 Apr 2013 15:13:22 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[User Groups]]></category>
+		<category><![CDATA[ofug]]></category>
+		<category><![CDATA[tuvia vinitski]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=1119</guid>
+		<description><![CDATA[<p>UPDATE: The meeting was recorded and is available on the OFUG YouTube Channel. Tonight&#8217;s presentation is &#8220;Update Me and My Licenses: License and Update Management for VFP&#8221; by Tuvia Vinitsky OFUG meets the 3rd Tuesday of each month at 8:30PM (Eastern Time – currently EDT). If you’re not sure what time that is in your time zone, you can [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/ofug-online-foxpro-user-group-meeting-tonight/">OFUG (Online FoxPro Users Group) Meeting Tonight</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">1119</post-id>	</item>
+		<item>
+		<title>Speaking at DAFUG and DevCon</title>
+		<link>/speaking-at-dafug-and-devcon/</link>
+		<pubDate>Sun, 04 Feb 2007 18:21:49 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Conferences]]></category>
+		<category><![CDATA[User Groups]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[speaking]]></category>
+		<category><![CDATA[user group]]></category>
+
+		<guid isPermaLink="false">/?p=229</guid>
+		<description><![CDATA[<p>I&#8217;ll be at the Detroit Area Fox Users Group meeting this Thursday night (February 8), talking about the Desktop Alerts. I&#8217;ve never been to Michigan, so I&#8217;m looking forward to the trip and meeting some new friends. I jokingly told the guys at the Chicago meeting last December that Chicago was the first stop on my 2007 &#8216;World Tour&#8217; (I [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/speaking-at-dafug-and-devcon/">Speaking at DAFUG and DevCon</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">229</post-id>	</item>
+		<item>
+		<title>Heading to the Windy City</title>
+		<link>/heading-to-the-windy-city/</link>
+		<pubDate>Sat, 09 Dec 2006 15:19:54 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[User Groups]]></category>
+		<category><![CDATA[speaking]]></category>
+		<category><![CDATA[user group]]></category>
+
+		<guid isPermaLink="false">/?p=212</guid>
+		<description><![CDATA[<p>I&#8217;ll be presenting the Desktop Alerts session at the Chicago FoxPro User&#8217;s and Developers Group meeting on Tuesday, December 12, at 5:30PM (CST). I&#8217;m looking forward to the trip and meeting the fine folks in the Windy City. I&#8217;ve never been to Chicago (or Illinois, for that matter). I wonder if it&#8217;ll be cold up there? This [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/heading-to-the-windy-city/">Heading to the Windy City</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">212</post-id>	</item>
+	</channel>
+</rss>

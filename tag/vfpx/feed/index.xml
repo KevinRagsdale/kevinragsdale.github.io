@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vfpx &#8211; Kevin Ragsdale</title>
+	<atom:link href="/tag/vfpx/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>FoxPro Programming and Visual FoxPro 9</description>
+	<lastBuildDate>Wed, 28 Sep 2016 23:00:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+<site xmlns="com-wordpress:feed-additions:1">34471053</site>	<item>
+		<title>Desktop Alerts Tip: Building App-Specific Alert EXE&#8217;s</title>
+		<link>/desktop-alerts-tip-building-app-specific-alert-exes/</link>
+		<pubDate>Wed, 21 Dec 2011 01:57:34 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[codeplex]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[vfpx]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=19</guid>
+		<description><![CDATA[<p>Compile your own application-specific version of the Desktop Alerts for each application, and include it (along with ALERT.WAV) with your installer.</p>
+<p>The post <a rel="nofollow" href="/desktop-alerts-tip-building-app-specific-alert-exes/">Desktop Alerts Tip: Building App-Specific Alert EXE&#8217;s</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">19</post-id>	</item>
+		<item>
+		<title>Desktop Alerts 1.0.0 (Production Release)</title>
+		<link>/desktop-alerts-1-0-0-production-release/</link>
+		<pubDate>Sun, 18 Dec 2011 22:36:45 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[codeplex]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[vfpx]]></category>
+		<category><![CDATA[visual foxpro]]></category>
+
+		<guid isPermaLink="false">/?p=27</guid>
+		<description><![CDATA[<p>After 4 years in beta, I've (finally) posted a new version of the Desktop Alerts as a Production Release on VFPX.</p>
+<p>The post <a rel="nofollow" href="/desktop-alerts-1-0-0-production-release/">Desktop Alerts 1.0.0 (Production Release)</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">27</post-id>	</item>
+		<item>
+		<title>Updated Desktop Alerts Source Code Available</title>
+		<link>/desktop-alerts-source-code-available/</link>
+		<comments>/desktop-alerts-source-code-available/#comments</comments>
+		<pubDate>Fri, 15 Dec 2006 04:09:42 +0000</pubDate>
+		<dc:creator><![CDATA[Kevin Ragsdale]]></dc:creator>
+				<category><![CDATA[Desktop Alerts]]></category>
+		<category><![CDATA[desktop alerts]]></category>
+		<category><![CDATA[source code]]></category>
+		<category><![CDATA[vfpx]]></category>
+
+		<guid isPermaLink="false">/?p=214</guid>
+		<description><![CDATA[<p>Links in this post have been updated to link to the VFPX site on CodePlex. I&#8217;ve updated the source code for the Desktop Alerts, and posted to the web site. Updates include the ability to hide the Close button and Push-Pin button on the alert form, and I made a couple of minor changes to bring back [&#8230;]</p>
+<p>The post <a rel="nofollow" href="/desktop-alerts-source-code-available/">Updated Desktop Alerts Source Code Available</a> appeared first on <a rel="nofollow" href="/">Kevin Ragsdale</a>.</p>
+]]></description>
+		<wfw:commentRss>/desktop-alerts-source-code-available/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">214</post-id>	</item>
+	</channel>
+</rss>
