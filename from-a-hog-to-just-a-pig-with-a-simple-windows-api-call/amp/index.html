@@ -1,0 +1,472 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>From A Hog To Just A Pig With A Simple Windows API Call</title>
+		<link rel="canonical" href="/from-a-hog-to-just-a-pig-with-a-simple-windows-api-call/" />
+		<script src="https://cdn.ampproject.org/v0.js" async></script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"\/from-a-hog-to-just-a-pig-with-a-simple-windows-api-call\/","publisher":{"@type":"Organization","name":"Kevin Ragsdale"},"headline":"From A Hog To Just A Pig With A Simple Windows API Call","datePublished":"2009-07-26T19:50:51+00:00","dateModified":"2009-07-26T19:50:51+00:00","author":{"@type":"Person","name":"Kevin Ragsdale"},"image":{"@type":"ImageObject","url":"https:\/\/i1.wp.com\/kevinragsdale.net\/wp-content\/uploads\/2012\/06\/1stalert.png?fit=367%2C66&ssl=1","width":367,"height":66}}</script>
+		<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 730px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 1.5em;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+			</style>
+</head>
+
+<body class="">
+
+<header id="#top" class="amp-wp-header">
+	<div>
+		<a href="/">
+						Kevin Ragsdale		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">From A Hog To Just A Pig With A Simple Windows API Call</h1>
+				<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/312fca19660d3ccc712d9a90106dadd3?s=24&#038;d=mm&#038;r=g" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Kevin Ragsdale</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2009-07-26T19:50:51+00:00">
+		8 years ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p>One of the first questions I got about the <a title="Desktop Alerts Blog Category" href="/category/blog/desktop-alerts/" target="_blank">Desktop Alerts</a> was, “How much memory and other system resources does this use?”</p>
+<p>This was during the presentation in Chicago in December of 2006. My response was the typical, “Oh, not much at all. It’s very light.”</p>
+<p>Well, I fired up Task Manager (in front of everyone in the room), and was shocked to find this tiny little app using 10MB of memory — <em>even when it was just sitting there, doing nothing</em>!</p>
+<p>“Hmmm,” I thought, “This thing is a hog.”</p>
+<p>Not a <em>huge</em> issue, especially compared to a <a title="Catastrophic Failure and Desktop Alerts" href="/catastrophic-failure-and-desktop-alerts/" target="_blank">Catastrophic Failure</a>, so I put it on the backburner (which is to say I promptly forgot all about it — if only my apps could free up memory as easily as my brain does).</p>
+<p>I recently worked on an app that uses the Microsoft Web Browser control on a Visual FoxPro form as the primary UI for the app. Works well for the most part, but checking memory usage in Task Manager showed a tremendous amount of resources being hogged by the app, even when the user is just sitting there looking at the screen and doing nothing.</p>
+<p>“Hmmm,” I thought, “<em>this </em>thing is a hog, too.”</p>
+<p>(I started looking at the app’s memory usage after a couple of users with “programming experience” mentioned it…)</p>
+<p>Luckily for me, in January of this year <a title="Sergey's Blog" href="http://www.berezniker.com/" target="_blank">Sergey Berezniker</a> wrote about using the Windows API to <a title="Blog post: Lowering memory usage by application" href="http://www.berezniker.com/content/pages/visual-foxpro/lowering-memory-usage-application" target="_blank">lower the memory usage of your application</a>.</p>
+<p>Simple, straightforward, and very simple to implement.</p>
+<p>I put it in the app, and was amazed by how much memory was saved by a simple function call. I went from about 60MB at application startup to about 8MB.</p>
+<p>After 6 months in production, I’ve seen no problems reported about the app that would indicate a problem with this function, so yesterday I decided to look at adding it to the Desktop Alerts.</p>
+<p>Here’s a quick sampling of the results (Windows XP Professional Service Pack 3):</p>
+<p><strong>1. AlertManager Initialized, waiting for something to do:</strong></p>
+<table border="0" cellspacing="3" cellpadding="5"><tbody><tr><td width="200"><strong>Before Change (Hog)</strong></td>
+<td width="200"><strong>After Change (Pig)</strong></td>
+</tr><tr><td width="200"><a href="/?attachment_id=388"><amp-img class="alignnone  wp-image-388 amp-wp-enforced-sizes" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/noalerts.png?resize=300%2C59" alt="" srcset="https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts.png?w=359&amp;ssl=1 359w, https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts.png?resize=300%2C59&amp;ssl=1 300w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="59"></amp-img></a></td>
+<td width="200"><a href="/?attachment_id=392"><amp-img class="alignnone  wp-image-392 amp-wp-enforced-sizes" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/noalerts2.png?resize=300%2C57" alt="" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts2.png?w=362&amp;ssl=1 362w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts2.png?resize=300%2C57&amp;ssl=1 300w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="57"></amp-img></a></td>
+</tr></tbody></table><p><strong>2. First Alert created and visible:</strong></p>
+<table border="0" cellspacing="3" cellpadding="5"><tbody><tr><td width="200"><strong>Before Change (Hog)</strong></td>
+<td width="200"><strong>After Change (Pig)</strong></td>
+</tr><tr><td width="200"><a href="/?attachment_id=354"><amp-img class="alignnone  wp-image-354 amp-wp-enforced-sizes" src="https://i2.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/1stalert.png?resize=300%2C57" alt="" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/1stalert.png?zoom=2&amp;resize=300%2C57&amp;ssl=1 600w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/1stalert.png?zoom=3&amp;resize=300%2C57&amp;ssl=1 900w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="57"></amp-img></a></td>
+<td width="200"><a href="/?attachment_id=356"><amp-img class="alignnone  wp-image-356 amp-wp-enforced-sizes" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/1stalert2.png?resize=300%2C57" alt="" srcset="https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/1stalert2.png?zoom=2&amp;resize=300%2C57&amp;ssl=1 600w, https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/1stalert2.png?zoom=3&amp;resize=300%2C57&amp;ssl=1 900w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="57"></amp-img></a></td>
+</tr></tbody></table><p><strong>3. Three alerts visible on screen:</strong></p>
+<table border="0" cellspacing="3" cellpadding="5"><tbody><tr><td width="200"><strong>Before Change (Hog)</strong></td>
+<td width="200"><strong>After Change (Pig)</strong></td>
+</tr><tr><td width="200"><a href="/?attachment_id=358"><amp-img class="alignnone  wp-image-358 amp-wp-enforced-sizes" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/3alerts.png?resize=300%2C57" alt="" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/3alerts.png?zoom=2&amp;resize=300%2C57&amp;ssl=1 600w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/3alerts.png?zoom=3&amp;resize=300%2C57&amp;ssl=1 900w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="57"></amp-img></a></td>
+<td width="200"><a href="/?attachment_id=360"><amp-img class="alignnone  wp-image-360 amp-wp-enforced-sizes" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/3alerts2.png?resize=300%2C55" alt="" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/3alerts2.png?zoom=2&amp;resize=300%2C55&amp;ssl=1 600w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/3alerts2.png?zoom=3&amp;resize=300%2C55&amp;ssl=1 900w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="55"></amp-img></a></td>
+</tr></tbody></table><p><strong>4. All alerts cleared, AlertManager waiting for next command:</strong></p>
+<table border="0" cellspacing="3" cellpadding="5"><tbody><tr><td width="200"><strong>Before Change (Hog)</strong></td>
+<td width="200"><strong>After Change (Pig)</strong></td>
+</tr><tr><td width="200"><a href="/?attachment_id=389"><amp-img class="alignnone  wp-image-389 amp-wp-enforced-sizes" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/noalerts_1.png?resize=300%2C59" alt="" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts_1.png?w=359&amp;ssl=1 359w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts_1.png?resize=300%2C59&amp;ssl=1 300w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="59"></amp-img></a></td>
+<td width="200"><a href="/?attachment_id=393"><amp-img class="alignnone  wp-image-393 amp-wp-enforced-sizes" src="https://i2.wp.com/kevinragsdale.info/wp-content/uploads/2012/06/noalerts2_1.png?resize=300%2C57" alt="" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts2_1.png?w=362&amp;ssl=1 362w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/06/noalerts2_1.png?resize=300%2C57&amp;ssl=1 300w" sizes="(min-width: 300px) 300px, 100vw" width="300" height="57"></amp-img></a></td>
+</tr></tbody></table><p> </p>
+<p>So, with <a title="EmptyWorkingSet function" href="http://msdn.microsoft.com/en-us/library/ms682606(VS.85).aspx" target="_blank">one simple Windows API call</a>, we’ve reduced the memory usage by almost 80%, turning this gigantic hog into a smaller pig. I’ve seen similar results in Vista, though the memory usage in Vista was much lower to start with than in XP, so the results of the change aren’t quite as dramatic.</p>
+<p>One interesting thing, though. See the User Name column in the screenshots? The user changed from <strong>Kevin Ragsdale</strong> to <strong>SYSTEM</strong>. So, not only has a hog become a pig, its name has been changed as well. In Windows Vista, the User Name stays put as Kevin Ragsdale.</p>
+<blockquote><p><em>Anyone that can explain this to me without causing my head to explode — feel free to explain in the comments.</em></p></blockquote>
+<p>This API function is available in Windows 2000 and higher so, if you have any <a title="When Do You Say Your App Is “Not Supported”?" href="/when-do-you-say-your-app-is-not-supported/" target="_blank">OS stragglers</a> you’ll want to bracket the function call with something like this:</p>
+<pre>IF VAL(OS(3)) &gt;= 5    &amp;&amp; Skip if earlier than Windows 2000
+   ** Do your thing
+ENDIF</pre>
+<p>And yes, I <em>do</em> have a ton of code “out there” that uses this bracket a lot…</p>
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/desktop-alerts/" rel="category tag">Desktop Alerts</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/desktop-alerts-2/" rel="tag">desktop alerts</a>, <a href="/tag/memory/" rel="tag">memory</a>, <a href="/tag/winapi/" rel="tag">winapi</a>	</div>
+	</footer>
+
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Kevin Ragsdale</h2>
+		<p>
+			<a href="https://wordpress.org/">Powered by WordPress</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+	<amp-pixel src="https://pixel.wp.com/g.gif?v=ext&#038;j=1%3A5.0&#038;blog=34471053&#038;post=280&#038;tz=-5&#038;srv=kevinragsdale.net&#038;host=kevinragsdale.net&#038;rand=RANDOM&#038;ref=DOCUMENT_REFERRER"></amp-pixel>
+	
+</body>
+</html>

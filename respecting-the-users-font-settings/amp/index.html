@@ -1,0 +1,494 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>Respecting The User&#039;s Font Settings</title>
+		<link rel="canonical" href="/respecting-the-users-font-settings/" />
+		<script src="https://cdn.ampproject.org/v0.js" async></script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"\/respecting-the-users-font-settings\/","publisher":{"@type":"Organization","name":"Kevin Ragsdale"},"headline":"Respecting The User&#8217;s Font Settings","datePublished":"2013-01-01T05:00:38+00:00","dateModified":"2013-01-01T05:00:38+00:00","author":{"@type":"Person","name":"Kevin Ragsdale"},"image":{"@type":"ImageObject","url":"https:\/\/i1.wp.com\/kevinragsdale.net\/wp-content\/uploads\/2012\/12\/FontFactor1.png?fit=149%2C107&ssl=1","width":149,"height":107}}</script>
+		<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 730px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 1.5em;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline styles */
+.amp-wp-inline-c4e232a28922594be37415754d69c180{max-width:277px;}.amp-wp-inline-94e5842f03b12ece38dd3b0865f0f4aa{max-width:234px;}.amp-wp-inline-5c2b43db30d37388c501e254aa351542{max-width:159px;}	</style>
+</head>
+
+<body class="">
+
+<header id="#top" class="amp-wp-header">
+	<div>
+		<a href="/">
+						Kevin Ragsdale		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Respecting The User&#8217;s Font Settings</h1>
+				<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/312fca19660d3ccc712d9a90106dadd3?s=24&#038;d=mm&#038;r=g" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Kevin Ragsdale</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2013-01-01T05:00:38+00:00">
+		4 years ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p><strong>Updated December 16, 2013: Source code from this post is <a title="FONTFACTOR.PRG Source Code" href="/source-code-determining-user/">available here</a>.</strong></p>
+<p>All versions of Windows have a “system font”, which is used for menus, title bars, messageboxes, etc.</p>
+<p>The Windows XP system font (except for a couple of Windows Classic themes) is Tahoma.</p>
+<p>The system font for Windows Vista, Windows 7, and Windows 8 is Segoe UI.</p>
+<p>I’ve seen apps which use a variety of fonts within the application. Some may use Arial for labels, but Courier New (or some other font) for all data-bound controls. I’ve seen arguments online about the pros and cons of using multiple fonts. For myself, though, I just don’t like seeing a mix-and-match approach to fonts in an app. The app menu and form captions will have the Windows system font, and the form itself may have two or three different fonts. This is simply too much for my old eyes (and slow brain) to take in.</p>
+<p>This is, of course, a personal preference. I’m not making any “right” or “wrong” statements here — just sharing my opinion.</p>
+<p>Since I want my apps to have a level of consistency and a professional Windows look and feel, I like for my forms and form objects to use the same font that Windows is using.</p>
+<p>In an effort to “define the <a title="Define Your Lowest Common Denominator" href="/define-your-lowest-common-denominator/" target="_blank">lowest common denominator</a>”, I’ve decided to use Tahoma exclusively in Windows XP, and Segoe UI in Windows Vista and later.</p>
+<p>In Doug’s Windows 7 session, he showed how he added code in the Init event of classes to change the font to Segoe UI if the user is running Windows Vista or later. I do the opposite: I check the OS and change the font to Tahoma if the user is running a pre-Vista version of Windows. This is again a personal preference; since I do my development work in Windows 7, I like to see the Segoe UI font while I’m doing my dev work.</p>
+<p>Doug has posted a LOT of his whitepapers, articles and sample code on his <a title="Doug Hennig Technical Papers" href="http://doughennig.com/papers/default.html" target="_blank">web site</a>. Comments about Segoe and Windows 7 can be found in this <a title="Doug Hennig - Developing VFP Applications for Windows 7" href="http://doughennig.com/Pub/Windows7.pdf" target="_blank">whitepaper</a>.</p>
+<p>It was mentioned during one of my sessions that if I am working on a team, and any members of the team are using Windows XP (or earlier), I’d want to develop in Tahoma exclusively and follow Doug’s method of switching to Segoe UI at runtime. An excellent suggestion!</p>
+<p> </p>
+<h2>Does The User Want Large Fonts?</h2>
+<p>I now have a way of ensuring my apps use one particular font. Now we need to see if the user has told Windows that she would like to use large fonts. I try to determine if the user wants to use large fonts for one simple reason: if the user wants large fonts, she usually has a reason (large monitor with high resolution, personal comfort, or perhaps she has a disability and needs to use large fonts). This way, my app can resize the forms and form controls automatically, to match the users needs.</p>
+<p>With a couple of Windows API calls, I know right away if the user has selected large fonts in Windows. I’ve used the code listed below in the past for determining the font size setting, slightly modified from an article Doug Hennig wrote several years ago:</p>
+<pre>LOCAL liHDC, liPixelsPerInchX, ;
+      liPixelsPerInchY, lnFontFactor
+
+DECLARE INTEGER GetDC IN Win32API ;
+   INTEGER iHDC
+
+DECLARE INTEGER GetDeviceCaps IN WIN32API ;
+   INTEGER iHDC, INTEGER iIndex
+
+#DEFINE cnLOG_PIXELS_X 88
+#DEFINE cnLOG_PIXELS_Y 90
+
+liHDC = GetDC(ThisForm.HWnd)
+liPixelsPerInchX = GetDeviceCaps(liHDC, cnLOG_PIXELS_X)
+liPixelsPerInchY = GetDeviceCaps(liHDC, cnLOG_PIXELS_Y)
+
+IF liPixelsPerInchX &lt;= 96
+   ** The user has selected "normal" font size
+   lnFontFactor = 1
+ELSE
+   ** The user wants to use large fonts. The
+   ** calculation will determine how large
+   ** (by percentage) the fonts should be.
+   lnFontFactor = 1 + ((liPixelsPerInchX - 96)/96)
+ENDIF
+
+MESSAGEBOX("The DPI 'font factor' is: " + ; 
+           ALLTRIM(TRANSFORM(lnFontFactor)),0,"Font Factor")</pre>
+<p>This code simply calls Windows and says, “Hey Windows, what’s the current DPI setting?” and displays the percentage I should bump up my visual controls by in order to match the users settings.When I run the code in Windows XP, with DPI set to the “normal” 96dpi, I get the following:</p>
+<div id="attachment_898" class="wp-caption alignnone amp-wp-inline-5c2b43db30d37388c501e254aa351542"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/FontFactor1.png"><amp-img class="size-full wp-image-898 amp-wp-enforced-sizes" alt="Font Factor for 96dpi in Windows XP" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/FontFactor1.png?resize=149%2C107" width="149" height="107" sizes="(min-width: 149px) 149px, 100vw"></amp-img></a><p class="wp-caption-text">Font Factor for 96dpi in Windows XP</p></div>
+<p>A “font factor” of 1 means I don’t need to do any resizing of any forms or form objects.</p>
+<p>Setting the DPI in Windows XP to 120dpi results in this:</p>
+<div id="attachment_899" class="wp-caption alignnone amp-wp-inline-94e5842f03b12ece38dd3b0865f0f4aa"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/FontFactor2.png"><amp-img class="size-full wp-image-899 amp-wp-enforced-sizes" alt="Font Factor for 120dpi in Windows XP" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/FontFactor2.png?resize=224%2C136" width="224" height="136" sizes="(min-width: 224px) 224px, 100vw"></amp-img></a><p class="wp-caption-text">Font Factor for 120dpi in Windows XP</p></div>
+<p>A “Font Factor” of 1.25 means the user wants to see things larger than the “normal” 96dpi, so I need to resize all of my visual controls in the app to be 25% larger.</p>
+<p>For good measure, here’s the result when the DPI is set to 144dpi:</p>
+<div id="attachment_900" class="wp-caption alignnone amp-wp-inline-c4e232a28922594be37415754d69c180"><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/FontFactor3.png"><amp-img class="size-full wp-image-900 amp-wp-enforced-sizes" alt="Font Factor for 144dpi in Windows XP" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/FontFactor3.png?resize=267%2C165" width="267" height="165" sizes="(min-width: 267px) 267px, 100vw"></amp-img></a><p class="wp-caption-text">Font Factor for 144dpi in Windows XP</p></div>
+<p>In this case, I’ll want to resize all of the visual controls by increasing their size by 50%.</p>
+<p>So now it’s just a matter of resizing all controls on my form by multiplying the design time font size by the “font factor”.</p>
+<p>Of course, I’ll also need to resize the forms height and width by the same percentage, and “move” each control accordingly.</p>
+<p>I’ll be adding a class (cusResizer) for this series which automatically performs the calculations and resizing of forms and form objects. It will be available for download soon.</p>
+<p>And, we’re done!</p>
+<p>Well, not quite yet.</p>
+<p>The code above works fine in XP.</p>
+<p>But, how does it do in Vista and Windows 7 &amp; 8?</p>
+<p>That <em>depends</em>…</p>
+<p> </p>
+<p> </p>
+<p> </p>
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/tips-and-tricks-to-improve-your-apps-ui/" rel="category tag">It's So, Uh, Gray</a>, <a href="/category/programming/" rel="category tag">Programming</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/fonts/" rel="tag">fonts</a>, <a href="/tag/foxpro/" rel="tag">foxpro</a>, <a href="/tag/visual-foxpro-2/" rel="tag">visual foxpro</a>, <a href="/tag/windows/" rel="tag">windows</a>	</div>
+	</footer>
+
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Kevin Ragsdale</h2>
+		<p>
+			<a href="https://wordpress.org/">Powered by WordPress</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+	<amp-pixel src="https://pixel.wp.com/g.gif?v=ext&#038;j=1%3A5.0&#038;blog=34471053&#038;post=897&#038;tz=-5&#038;srv=kevinragsdale.net&#038;host=kevinragsdale.net&#038;rand=RANDOM&#038;ref=DOCUMENT_REFERRER"></amp-pixel>
+	
+</body>
+</html>

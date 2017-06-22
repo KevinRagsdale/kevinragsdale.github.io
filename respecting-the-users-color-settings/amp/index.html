@@ -1,0 +1,477 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>Respecting The User&#039;s Color Settings</title>
+		<link rel="canonical" href="/respecting-the-users-color-settings/" />
+		<script src="https://cdn.ampproject.org/v0.js" async></script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"\/respecting-the-users-color-settings\/","publisher":{"@type":"Organization","name":"Kevin Ragsdale"},"headline":"Respecting The User&#8217;s Color Settings","datePublished":"2012-12-30T00:15:05+00:00","dateModified":"2014-06-08T07:56:38+00:00","author":{"@type":"Person","name":"Kevin Ragsdale"},"image":{"@type":"ImageObject","url":"https:\/\/i0.wp.com\/kevinragsdale.net\/wp-content\/uploads\/2012\/12\/Default.png?fit=536%2C378&ssl=1","width":536,"height":378}}</script>
+		<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 730px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 1.5em;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline styles */
+.amp-wp-inline-3679146f2d910c224da7bbc0bf0e85b4{max-width:393px;}.amp-wp-inline-071760ab52ad1c6d769a846d8979d808{max-width:573px;}.amp-wp-inline-ea51495ec3797844337d54f6267b1f6e{max-width:631px;}.amp-wp-inline-e9d2168ee692abed01ed4bcc7281df89{max-width:392px;}.amp-wp-inline-8d5499fa917c298eef499798a42af4a2{max-width:401px;}.amp-wp-inline-5331faea932aaa60979b414ea04eab43{max-width:495px;}.amp-wp-inline-96ba9c855122c05a75359ebcc0599a5f{max-width:546px;}	</style>
+</head>
+
+<body class="">
+
+<header id="#top" class="amp-wp-header">
+	<div>
+		<a href="/">
+						Kevin Ragsdale		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Respecting The User&#8217;s Color Settings</h1>
+				<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/312fca19660d3ccc712d9a90106dadd3?s=24&#038;d=mm&#038;r=g" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Kevin Ragsdale</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2012-12-30T00:15:05+00:00">
+		4 years ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p>Before we talk about color settings, it’s important to know upfront where Visual FoxPro gets the default values for forms and form objects.</p>
+<p>Have you ever wondered where the VFP IDE comes up with its default colors for forms (and other objects)? They come right from the Windows API.</p>
+<p>According to the VFP Help File: “The color settings, or Themes, of the operating system set the default color settings for the BackColor and ForeColor properties.”</p>
+<p>This explains why, on my machine, when I create a new form in Windows 7 the properties sheet contains the following (BackColor = 240,240,240):</p>
+<p><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Default1.png"><amp-img class="size-full wp-image-856 amp-wp-enforced-sizes" alt="Default form BackColor on my Windows 7 machine" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Default1.png?resize=536%2C378" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Default1.png?w=536&amp;ssl=1 536w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Default1.png?resize=300%2C211&amp;ssl=1 300w" sizes="(min-width: 536px) 536px, 100vw" width="536" height="378"></amp-img></a></p>
+<dl class="wp-caption alignnone amp-wp-inline-96ba9c855122c05a75359ebcc0599a5f" id="attachment_856"><dd class="wp-caption-dd">The default BackColor for a new form on my Windows 7 machine is 240,240,240</dd>
+</dl><p>The BackColor property depends completely on the current color scheme (theme) I’m using in Windows at <em>design time</em>. If I am set to Windows Classic in Windows 7, the BackColor is different. If I decide to punish myself and create a new form while the High Contrast (Black) theme is running, the default BackColor will be 0,0,0.</p>
+<p>When I open this form in Windows XP, I get a different BackColor:</p>
+<div id="attachment_857" class="wp-caption alignnone amp-wp-inline-5331faea932aaa60979b414ea04eab43"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/DefaultXP.png"><amp-img class="size-full wp-image-857 amp-wp-enforced-sizes" alt="Default form BackColor on my Windows XP machine" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/DefaultXP.png?resize=485%2C333" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/DefaultXP.png?w=485&amp;ssl=1 485w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/DefaultXP.png?resize=300%2C205&amp;ssl=1 300w" sizes="(min-width: 485px) 485px, 100vw" width="485" height="333"></amp-img></a><p class="wp-caption-text">The default BackColor of a new form in XP (depends on your theme)</p></div>
+<p>What this means is if I do not change the BackColor of a new form, even if I created the form in Windows 7 with an Aero theme, my form BackColor will match whatever theme I’m using in other versions of Windows (and Windows themes) at <em>design time <strong>and</strong> runtime</em> – without me having to do anything!</p>
+<p>In short, “Your Default BackColor = the Windows API System Color”.</p>
+<p>This is pretty powerful stuff. In Windows 7, I’ve created the form pictured below. I left the BackColor property as the Default. When I run it in Windows 7, I see this:</p>
+<div id="attachment_858" class="wp-caption alignnone amp-wp-inline-8d5499fa917c298eef499798a42af4a2"><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Win7.png"><amp-img class="size-full wp-image-858 amp-wp-enforced-sizes" alt="Same BackColor as my default" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Win7.png?resize=391%2C288" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Win7.png?w=391&amp;ssl=1 391w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Win7.png?resize=300%2C220&amp;ssl=1 300w" sizes="(min-width: 391px) 391px, 100vw" width="391" height="288"></amp-img></a><p class="wp-caption-text">Just as I expected. The exact same BackColor as the default in my design environment.</p></div>
+<p>When I run the same form on Windows XP (with the Windows XP Blue Theme), I get this:</p>
+<div id="attachment_859" class="wp-caption alignnone amp-wp-inline-3679146f2d910c224da7bbc0bf0e85b4"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPBlue.png"><amp-img class="size-full wp-image-859 amp-wp-enforced-sizes" alt="A bit different" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPBlue.png?resize=383%2C284" srcset="https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPBlue.png?w=383&amp;ssl=1 383w, https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPBlue.png?resize=300%2C222&amp;ssl=1 300w" sizes="(min-width: 383px) 383px, 100vw" width="383" height="284"></amp-img></a><p class="wp-caption-text">It’s different, but the same</p></div>
+<p>It’s different, but it’s <em>exactly what Windows wants the BackColor to be</em>, based on the theme.</p>
+<p>When I change the XP theme to Windows Classic Spruce, I get this:</p>
+<div id="attachment_860" class="wp-caption alignnone amp-wp-inline-e9d2168ee692abed01ed4bcc7281df89"><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPSpruce.png"><amp-img class="size-full wp-image-860 amp-wp-enforced-sizes" alt="Perfect!" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPSpruce.png?resize=382%2C276" srcset="https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPSpruce.png?w=382&amp;ssl=1 382w, https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPSpruce.png?resize=300%2C216&amp;ssl=1 300w" sizes="(min-width: 382px) 382px, 100vw" width="382" height="276"></amp-img></a><p class="wp-caption-text">Perfect! And I didn’t have to change a thing!</p></div>
+<p>And once again, the BackColor matches the Windows theme at runtime. All without a single property change or a single line of code!</p>
+<p>I wonder what happens when I make a change to the BackColor?</p>
+<p>I flip back to my Windows 7 dev machine, change the BackColor to 192,192,192, save and run the form – and here’s what I see:</p>
+<div id="attachment_861" class="wp-caption alignnone amp-wp-inline-8d5499fa917c298eef499798a42af4a2"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Win7Gray.png"><amp-img class="size-full wp-image-861 amp-wp-enforced-sizes" alt="Big deal. It's exactly what I told it to be, right?" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Win7Gray.png?resize=391%2C288" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Win7Gray.png?w=391&amp;ssl=1 391w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Win7Gray.png?resize=300%2C220&amp;ssl=1 300w" sizes="(min-width: 391px) 391px, 100vw" width="391" height="288"></amp-img></a><p class="wp-caption-text">Big deal. It’s exactly what I told it to be, right?</p></div>
+<p>And running the same form on XP (again with the Blue Theme):</p>
+<div id="attachment_862" class="wp-caption alignnone amp-wp-inline-3679146f2d910c224da7bbc0bf0e85b4"><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPBlueGray.png"><amp-img class="size-full wp-image-862 amp-wp-enforced-sizes" alt="Same BackColor as Windows 7, because I told it to change" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPBlueGray.png?resize=383%2C284" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPBlueGray.png?w=383&amp;ssl=1 383w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPBlueGray.png?resize=300%2C222&amp;ssl=1 300w" sizes="(min-width: 383px) 383px, 100vw" width="383" height="284"></amp-img></a><p class="wp-caption-text">Same BackColor as Windows 7, because I told it to change</p></div>
+<p>Whew! I’ve set my form BackColor to 192,192,192, and it looks relatively the same on my Windows 7 and Windows XP. So, I’m done, right?</p>
+<p>Not quite. I changed my theme in Windows XP back to “Spruce”:</p>
+<div id="attachment_863" class="wp-caption alignnone amp-wp-inline-e9d2168ee692abed01ed4bcc7281df89"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPSpruceGray.png"><amp-img class="size-full wp-image-863 amp-wp-enforced-sizes" alt="That's different. REAL different. And, dare I say it? Ugly!" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPSpruceGray.png?resize=382%2C276" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPSpruceGray.png?w=382&amp;ssl=1 382w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPSpruceGray.png?resize=300%2C216&amp;ssl=1 300w" sizes="(min-width: 382px) 382px, 100vw" width="382" height="276"></amp-img></a><p class="wp-caption-text">That’s different. REAL different. And, dare I say it? Ugly!</p></div>
+<p>OK, I don’t like that. So, I’ll just jump back into VFP and change the color back to what Windows 7 said the default should be: 240,240,240.</p>
+<p>Let’s see it in Windows 7:</p>
+<div id="attachment_864" class="wp-caption alignnone amp-wp-inline-8d5499fa917c298eef499798a42af4a2"><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Win7Back.png"><amp-img class="size-full wp-image-864 amp-wp-enforced-sizes" alt="And we're back to the default! Or, are we?" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/Win7Back.png?resize=391%2C288" srcset="https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Win7Back.png?w=391&amp;ssl=1 391w, https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/Win7Back.png?resize=300%2C220&amp;ssl=1 300w" sizes="(min-width: 391px) 391px, 100vw" width="391" height="288"></amp-img></a><p class="wp-caption-text">And we’re back to the default! Or, are we?</p></div>
+<p>So far, so good. Let’s see how it looks in Windows XP “Spruce”:</p>
+<div id="attachment_865" class="wp-caption alignnone amp-wp-inline-e9d2168ee692abed01ed4bcc7281df89"><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPSpruceBack.png"><amp-img class="size-full wp-image-865 amp-wp-enforced-sizes" alt="What happened? I changed it back to the default!" src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/XPSpruceBack.png?resize=382%2C276" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPSpruceBack.png?w=382&amp;ssl=1 382w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/XPSpruceBack.png?resize=300%2C216&amp;ssl=1 300w" sizes="(min-width: 382px) 382px, 100vw" width="382" height="276"></amp-img></a><p class="wp-caption-text">What happened? I changed it back to the default!</p></div>
+<p>I expected my form BackColor to pick up the Windows theme again. But, it didn’t. Let’s take a look at the property sheet:</p>
+<div id="attachment_866" class="wp-caption alignnone amp-wp-inline-ea51495ec3797844337d54f6267b1f6e"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/NotDefault.png"><amp-img class="size-full wp-image-866 amp-wp-enforced-sizes" alt="Hmm... It's the Default, but it's not the &quot;Default&quot;" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/NotDefault.png?resize=621%2C434" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/NotDefault.png?w=621&amp;ssl=1 621w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/NotDefault.png?resize=300%2C209&amp;ssl=1 300w" sizes="(min-width: 621px) 621px, 100vw" width="621" height="434"></amp-img></a><p class="wp-caption-text">Hmm… It’s the Default, but it’s not the “Default”</p></div>
+<p>When a property is shown in Bold in the VFP Properties window, it’s not the Default – <em>even if the value is the same</em> as the Default value you expected.</p>
+<p>So, how can we get it back to the way it was originally? <strong>Reset to Default</strong>. Right-click the property in the Properties window, and select “Reset to Default” from the context menu:</p>
+<div id="attachment_867" class="wp-caption alignnone amp-wp-inline-071760ab52ad1c6d769a846d8979d808"><a href="https://i2.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/ResetToDefault.png"><amp-img class="size-full wp-image-867 amp-wp-enforced-sizes" alt="Fixed. Finally!" src="https://i2.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/ResetToDefault.png?resize=563%2C482" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/ResetToDefault.png?w=563&amp;ssl=1 563w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/ResetToDefault.png?resize=300%2C256&amp;ssl=1 300w" sizes="(min-width: 563px) 563px, 100vw" width="563" height="482"></amp-img></a><p class="wp-caption-text">Fixed. Finally!</p></div>
+<p> </p>
+<p>So, what’s the big tip for forms and form objects?</p>
+<p><strong>Don’t touch the default values for “color” properties if you want your forms (and form objects) to be consistent with Windows themes. </strong></p>
+<p><strong>If you do change them, then later decide to go back to the “Default”, make sure you “Reset to Default”!</strong></p>
+<p>Just in case you need more evidence of just how ugly the form is when the BackColor is not set to the Default (i.e. Windows System Color), here’s the same form in High Contrast with the BackColor set to 192,192,192:</p>
+<div id="attachment_868" class="wp-caption alignnone amp-wp-inline-3679146f2d910c224da7bbc0bf0e85b4"><a href="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/ContrastGray.png"><amp-img class="size-full wp-image-868 amp-wp-enforced-sizes" alt="At least the label and the button used the correct colors." src="https://i0.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/ContrastGray.png?resize=383%2C279" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/ContrastGray.png?w=383&amp;ssl=1 383w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/ContrastGray.png?resize=300%2C218&amp;ssl=1 300w" sizes="(min-width: 383px) 383px, 100vw" width="383" height="279"></amp-img></a><p class="wp-caption-text">At least the label and the button used the correct colors.</p></div>
+<p>After a “Reset to Default”, the form looks like this:</p>
+<div id="attachment_869" class="wp-caption alignnone amp-wp-inline-3679146f2d910c224da7bbc0bf0e85b4"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/ContrastBlack.png"><amp-img class="size-full wp-image-869 amp-wp-enforced-sizes" alt="Whew, that's better!" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/ContrastBlack.png?resize=383%2C279" srcset="https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/ContrastBlack.png?w=383&amp;ssl=1 383w, https://i0.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/ContrastBlack.png?resize=300%2C218&amp;ssl=1 300w" sizes="(min-width: 383px) 383px, 100vw" width="383" height="279"></amp-img></a><p class="wp-caption-text">Whew, that’s better!</p></div>
+<p>As you can see from the previous images, the BackColor, ForeColor (in fact, <em>all of the color properties</em>) are tied to the Windows System Colors at runtime – but <em>only if their values are set to their Default properties</em>!</p>
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/tips-and-tricks-to-improve-your-apps-ui/" rel="category tag">It's So, Uh, Gray</a>, <a href="/category/programming/" rel="category tag">Programming</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/colors/" rel="tag">colors</a>, <a href="/tag/design/" rel="tag">design</a>, <a href="/tag/foxpro/" rel="tag">foxpro</a>, <a href="/tag/visual-foxpro-2/" rel="tag">visual foxpro</a>, <a href="/tag/windows/" rel="tag">windows</a>	</div>
+	</footer>
+
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Kevin Ragsdale</h2>
+		<p>
+			<a href="https://wordpress.org/">Powered by WordPress</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+	<amp-pixel src="https://pixel.wp.com/g.gif?v=ext&#038;j=1%3A5.0&#038;blog=34471053&#038;post=848&#038;tz=-5&#038;srv=kevinragsdale.net&#038;host=kevinragsdale.net&#038;rand=RANDOM&#038;ref=DOCUMENT_REFERRER"></amp-pixel>
+	
+</body>
+</html>

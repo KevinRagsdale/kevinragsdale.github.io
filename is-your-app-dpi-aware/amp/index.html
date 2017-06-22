@@ -1,0 +1,463 @@
+<!doctype html>
+<html amp lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>Is Your App DPI-Aware?</title>
+		<link rel="canonical" href="/is-your-app-dpi-aware/" />
+		<script src="https://cdn.ampproject.org/v0.js" async></script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":"\/is-your-app-dpi-aware\/","publisher":{"@type":"Organization","name":"Kevin Ragsdale"},"headline":"Is Your App DPI-Aware?","datePublished":"2013-01-03T05:00:25+00:00","dateModified":"2015-06-06T08:51:02+00:00","author":{"@type":"Person","name":"Kevin Ragsdale"},"image":{"@type":"ImageObject","url":"https:\/\/i2.wp.com\/kevinragsdale.net\/wp-content\/uploads\/2013\/01\/BlurryForm.png?fit=535%2C414&ssl=1","width":535,"height":414}}</script>
+		<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 730px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 1.5em;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( /wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+			</style>
+</head>
+
+<body class="">
+
+<header id="#top" class="amp-wp-header">
+	<div>
+		<a href="/">
+						Kevin Ragsdale		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Is Your App DPI-Aware?</h1>
+				<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/312fca19660d3ccc712d9a90106dadd3?s=24&#038;d=mm&#038;r=g" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">Kevin Ragsdale</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2013-01-03T05:00:25+00:00">
+		4 years ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		<p>When you tell Windows Vista (and 7 &amp; 8) that your app is DPI-aware, Windows will not use DPI virtualization for your app and will no longer “lie” when you ask about the DPI settings.</p>
+<p>Please note that by telling Windows that your app is DPI-aware, it is completely up to your app (you) to resize your UI in order to match user expectations based on their settings.</p>
+<p>There are 2 different ways to tell Windows Vista, 7 and 8 that your app is DPI-aware:</p>
+<ul><li>a Windows API function, or</li>
+<li>adding a section to your apps manifest file.</li>
+</ul><h3></h3>
+<h3>Using a Windows API Function</h3>
+<p>Windows Vista, 7 and 8 contain an API function named SetProcessDPIAware. The function has no parameters. It returns a zero if the function fails, and a non-zero result if the function succeeds.</p>
+<p>Using it from within Visual FoxPro is easy:</p>
+<pre>DECLARE INTEGER SetProcessDPIAware IN WIN32API&#13;
+SetProcessDPIAware()</pre>
+<p>The function simply tells Windows, “This app (process) is DPI Aware, so please do not lie to me. I will handle all of the resizing myself, so my users will see things the way they want to.”</p>
+<p>Easy, right? Well, kind of. If you run the code listing above from the VFP Command Window, and if your Windows DPI setting has been set to 144dpi with DPI Virtualization turned on, you’ll get the correct (truthful) font factor from Windows (when you follow the API call with the code listing from a <a title="Respecting The User’s Font Settings" href="/respecting-the-users-font-settings/" target="_blank">previous post</a>).</p>
+<p>BUT, remember this function has told Windows that this <em>process</em> is DPI-aware. And since you’re running the code from within the VFP IDE, you’re essentially telling Windows that <em>Visual FoxPro</em> is DPI-aware.</p>
+<p>Unfortunately, Visual FoxPro is not DPI-aware, and has already been “DPI virtualized” by Windows. Causing Windows to suddenly accept that Visual FoxPro is DPI-aware can wreak havoc with the IDE.</p>
+<p>If you don’t trust me on this, try it. It’s u-g-l-y!</p>
+<p>So, one way we can force Windows to accept the fact that our app is DPI-aware is to simply call the SetProcessDPIAware function – preferably as early in your app as possible. I have seen several forum postings which report calling the function too late can cause Windows to continue to “lie” and use DPI virtualization anyway, though I have not recreated this problem myself.</p>
+<p> </p>
+<h3>Using Your App Manifest File</h3>
+<p>Another way to tell Windows Vista (and 7) that the app is DPI-aware is to add the following section to your app manifest file:</p>
+<pre>&#13;
+&lt;asmv3:application xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"&gt;&#13;
+   &lt;asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings"&gt;&#13;
+      &lt;dpiAware&gt;true&lt;/dpiAware&gt;&#13;
+   &lt;/asmv3:windowsSettings&gt;&#13;
+&lt;/asmv3:application&gt;&#13;
+</pre>
+<p>If you are not sure about manifest files and adding manifest resources to your Visual FoxPro applications, I recommend the following articles (I’ve been using Markus’ Manifest Tools in my work):</p>
+<p><a href="http://blogs.msdn.com/b/calvin_hsia/archive/2007/04/13/add-a-manifest-to-control-your-application-vista-uac-behavior.aspx" target="_blank">Calvin Hsia: Add a Manifest to Control Your Application Vista UAC Behavior</a></p>
+<p><a href="https://web.archive.org/web/20150415195306/http://www.sweetpotatosoftware.com/spsblog/2009/08/03/ApplyApplicationManifestAtCompileTimeWithProjecthook.aspx" target="_blank">Craig Boyd: Apply Application Manifest At Compile Time With ProjectHook</a></p>
+<p><a href="http://www.bingo-ev.de/~mw368/vfp9_vista.html" target="_blank">Markus Winhard: ManifestTools.zip (based on code from Calvin’s blog above)</a></p>
+<p>If you are not comfortable with messing around with manifest files, the SetProcessDPIAware API function is the way to go. Just be sure it only runs on Vista/Win7/Win8 (or call it in a TRY-CATCH-ENDTRY block) to prevent an error in pre-Vista versions of Windows!</p>
+<p>Additional thoughts and (better) explanations of DPI-awareness in Vista can be found in the following article: <a href="http://www.rw-designer.com/DPI-aware" target="_blank">http://www.rw-designer.com/DPI-aware</a></p>
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="/category/tips-and-tricks-to-improve-your-apps-ui/" rel="category tag">It's So, Uh, Gray</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="/tag/design/" rel="tag">design</a>, <a href="/tag/dpi-virtualization/" rel="tag">dpi virtualization</a>, <a href="/tag/foxpro/" rel="tag">foxpro</a>, <a href="/tag/setprocessdpiaware/" rel="tag">SetProcessDPIAware()</a>, <a href="/tag/visual-foxpro-2/" rel="tag">visual foxpro</a>, <a href="/tag/windows/" rel="tag">windows</a>	</div>
+	</footer>
+
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>Kevin Ragsdale</h2>
+		<p>
+			<a href="https://wordpress.org/">Powered by WordPress</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+	<amp-pixel src="https://pixel.wp.com/g.gif?v=ext&#038;j=1%3A5.0&#038;blog=34471053&#038;post=925&#038;tz=-5&#038;srv=kevinragsdale.net&#038;host=kevinragsdale.net&#038;rand=RANDOM&#038;ref=DOCUMENT_REFERRER"></amp-pixel>
+	
+</body>
+</html>
