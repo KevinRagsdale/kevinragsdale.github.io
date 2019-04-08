@@ -396,17 +396,18 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p>Yesterday, I <a href="/whats-the-scariest-error-message-youve-ever-seen/" target="_blank">posted a screenshot</a> of my scariest error message. It was a message I had gotten while playing with the <a href="/updated-desktop-alerts-source-code-available/" target="_blank">Desktop Alerts</a>. <a href="http://randyjean.blogspot.com/" target="_blank">Randy Jean</a> commented that he saw the same error with the Desktop Alerts.</p>
+<p>Yesterday, I <a href="/whats-the-scariest-error-message-youve-ever-seen/" target="_blank">posted a screenshot</a> of my scariest error message. It was a message I had gotten while playing with the <a href="/updated-desktop-alerts-source-code-available/" target="_blank">Desktop Alerts</a>. <a href="http://randyjean.blogspot.com/" target="_blank">Randy Jean</a> commented that he saw the same error with the Desktop Alerts.</p>
 <p>In the Alert class nResult_Assign() method, I had the Alert calling its Release() method. So, if you had code like this:</p>
 <pre>oMgr = CreateObject("VFPAlert.AlertManager")
 oAlert = oMgr.NewAlert()
 oAlert.Alert("Howdy")
-oAlert.Alert("Howdy Again")</pre>
+oAlert.Alert("Howdy Again")
+</pre>
 <p>The first Alert() works just as expected.</p>
-<p>The second Alert() causes the “Catastrophic Failure” message. Why? Because oAlert had RELEASEd itself. And here I am, sitting with an object reference (oAlert) for which the<a href="http://msdn2.microsoft.com/en-us/library/tt9t2x67(VS.80).aspx" target="_blank">VARTYPE()</a> function returns an “O”.</p>
+<p>The second Alert() causes the Catastrophic Failure message. Why? Because oAlert had RELEASEd itself. And here I am, sitting with an object reference (oAlert) for which the <a href="http://msdn2.microsoft.com/en-us/library/tt9t2x67(VS.80).aspx" target="_blank">VARTYPE()</a> function returns "O".</p>
 <p>One way to see if the Alert still exists is to check the Alerts collection Count property. In the above example, this would be something like:</p>
 <pre>lnAlerts = oMgr.Alerts.Count</pre>
-<p>If you look at the Alert class Release() method and comment out the RELEASE THIS line, you can then “reuse” the alert as many times as you want.</p>
+<p>If you look at the Alert class Release() method and comment out the RELEASE THIS line, you can then reuse the alert as many times as you want.</p>
 
 	</div>
 
