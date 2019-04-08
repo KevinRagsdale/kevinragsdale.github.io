@@ -384,7 +384,7 @@ amp-carousel > amp-img > img {
 <article class="amp-wp-article">
 
 	<header class="amp-wp-article-header">
-		<h1 class="amp-wp-title">Creating a &#8220;Fading&#8221; Form</h1>
+		<h1 class="amp-wp-title">Creating a "Fading" Form</h1>
 				<div class="amp-wp-meta amp-wp-byline">
 					<amp-img src="https://secure.gravatar.com/avatar/312fca19660d3ccc712d9a90106dadd3?s=24&#038;d=mm&#038;r=g" width="24" height="24" layout="fixed"></amp-img>
 				<span class="amp-wp-author author vcard">Kevin Ragsdale</span>
@@ -396,31 +396,35 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p>I love the Desktop Alerts in Outlook 2003. They provide useful information <em>without interfering </em>with my work. I can’t stand to be working on one thing and suddenly have a MESSAGEBOX appear from another app informing me that it just did something wonderful on my behalf. The Desktop Alerts simply “appear” on my screen for a few seconds, letting me know I have new mail. They even provide some details (name of sender, subject). If I want to read the email immediately, I simply click on the Alert and Outlook opens the message. Otherwise, I can ignore the alert and it will fade away.</p>
+<p>I love the Desktop Alerts in Outlook 2003. They provide useful information <em>without interfering</em> with my work. I can't stand to be working on one thing and suddenly have a MESSAGEBOX appear from another app informing me that it just did something wonderful on my behalf. The Desktop Alerts simply appear on my screen for a few seconds, letting me know I have new mail. They even provide some details (name of sender, subject). If I want to read the email immediately, I simply click on the Alert and Outlook opens the message. Otherwise, I can ignore the alert and it will fade away.</p>
 <p>I thought something like this would be a great enhancement for some of my clients, so I went about the task of finding out how to make my forms Fade-In, Wait a Few Seconds for User Input, and Fade-Out. I found a solution right away in the Solution Samples that ship with VFP: Transparent Forms.</p>
 <p>A couple of Windows API calls can make your form transparent, to the level of transparency you require. The trick to making my form fade-in and out was to add a couple of timer controls to the form. The timers call the SetLayeredWindowAttributes function in a FOR loop, creating the fade-in/fade-out effect.</p>
-<p>I put together a simple “splash” screen (you can download it <a href="/Downloads/flashsplash.zip">here</a>), which demonstrates the effect. The zip file contains three files: FLASHSPLASH.SCX, FLASHSPLASH.SCT, and 192255.JPG (a gradient JPG that you can set as the form’s picture if you want to).</p>
+<p>I put together a simple splash screen (you can download it <a href="/Downloads/flashsplash.zip">here</a>), which demonstrates the effect. The zip file contains three files: FLASHSPLASH.SCX, FLASHSPLASH.SCT, and 192255.JPG (a gradient JPG that you can set as the form's picture if you want to).</p>
 <p>Two caveats: to create the effects, the user must be running Windows 2000 or higher, and the effects only work on Top-Level forms.</p>
 <p>The form contains a few custom properties:</p>
-<ul><li><strong>lCanFlash</strong>: A boolean value (.T. if Windows 2000 or higher, otherwise .F.)</li>
-<li><strong>nStepUp</strong>: An integer which determines how quickly the form will appear (used by the STEP clause in the first timer’s FOR loop). The higher the number, the faster the form fades-in. Defaults to 0.25</li>
-<li><strong>nStepDown</strong>: An integer which determines how quickly the form will disappear (used by the STEP clause in the second timer’s FOR loop). This number must be less than zero! Defaults to -0.25</li>
-<li><strong>nTransparency</strong>: An integer which determines the level of transparency for the form. A value of 25 is a “solid“ form. A value of zero (0) makes the form completely transaparent.</li>
-</ul><p>The lCanFlash property has an assign method, which basically DECLAREs the API functions and sets the form as completely transparent (if Windows 2000 or higher). The lCanFlash property is set in the form’s Init() method.</p>
+<ul>
+<li><strong>lCanFlash</strong>: A boolean value (.T. if Windows 2000 or higher, otherwise .F.)</li>
+<li><strong>nStepUp</strong>: An integer which determines how quickly the form will appear (used by the STEP clause in the first timer's FOR loop). The higher the number, the faster the form fades-in. Defaults to 0.25</li>
+<li><strong>nStepDown</strong>: An integer which determines how quickly the form will disappear (used by the STEP clause in the second timer's FOR loop). This number must be less than zero! Defaults to -0.25</li>
+<li><strong>nTransparency</strong>: An integer which determines the level of transparency for the form. A value of 25 is an opaque form. A value of zero (0) makes the form completely transparent.</li>
+</ul>
+<p>The lCanFlash property has an assign method, which basically DECLAREs the API functions and sets the form as completely transparent (if Windows 2000 or higher). The lCanFlash property is set in the form's Init() method.</p>
 <p>In a nutshell, here’s what the sample form does:</p>
-<ol><li>Checks to see if the OS is Win2K or higher. If yes,
+<ol>
+<li>Checks to see if the OS is Win2K or higher. If yes,
 <ol><li>Sets the lCanFlash property to .T., which in turn,</li>
 <li>DECLAREs the API Functions</li>
 <li>Calls the API Functions to make the form completely transparent (invisible)</li>
 </ol></li>
-<li>Turns on the first timer, which uses the form’s custom properties to drive a FOR loop, which calls the SetLayeredWindowAttributes API function �" causing the form to gradually appear</li>
-<li>Since the sample form is a splash screen, another little FOR loop updates a label control, to make the form look like it’s “doing“ something</li>
-<li>Turns on the second timer, which also uses the form’s custom properties to drive a FOR loop, which makes the form gradually disappear</li>
-<li>The second timer then Releases the form. The form’s Destroy method issues a CLEAR DLLS command</li>
-</ol><p>I have an app which periodically checks a server to see if any of my user’s customer’s have placed orders. If orders are found, they are downloaded for processing, but it’s all done in the background. The user’s typically have no idea an order has been placed unless they stop what they’re doing to either go to a website which shows outstanding orders, or by launching the interactive app.  By adding my own “desktop alerts“ to the system, I can give the user a professional-looking piece of information which shouldn’t interfere with their work.</p>
-<p>Hope you like it. Since this is my first attempt to share something with the FoxPro community, <em>any</em> feedback would be greatly appreciated. Once I get done with my “desktop alert“ system, I’ll pass it along.</p>
+<li>Turns on the first timer, which uses the form's custom properties to drive a FOR loop, which calls the SetLayeredWindowAttributes API function, causing the form to gradually appear</li>
+<li>Since the sample form is a splash screen, another little FOR loop updates a label control, to make the form look like it's doing <em>something</em></li>
+<li>Turns on the second timer, which also uses the form's custom properties to drive a FOR loop, which makes the form gradually disappear</li>
+<li>The second timer then Releases the form. The form's Destroy method issues a CLEAR DLLS command</li>
+</ol>
+<p>I have an app which periodically checks a server to see if any of my users customer's have placed orders. If orders are found, they are downloaded for processing, but it's all done in the background. The users typically have no idea an order has been placed unless they stop what they're doing to either go to a website which shows outstanding orders, or by launching the interactive app.  By adding my own desktop alerts to the system, I can give the user a professional-looking piece of information that won't interfere with their work.</p>
+<p>Hope you like it. Since this is my first attempt to share something with the FoxPro community, <em>any</em> feedback would be greatly appreciated. Once I get done with my desktop alert system, I'll pass it along.</p>
 <p><a title="Zipped file (5 kb)" href="/Downloads/flashsplash.zip">Sample Form Download</a></p>
-<p>Edited: Probably best to try this out in VFP 7,8 or 9. It’s been so long since I’ve actually “used“ VFP 6, I forgot about the hoops you’ll have to jump through to make this work (like HWND). Thanks Fred for your feedback! – Kevin</p>
+<blockquote>Edited: Probably best to try this out in VFP 7,8 or 9. It’s been so long since I've used VFP 6, I forgot about the hoops you'll have to jump through to make this work (like HWND). Thanks Fred for your feedback! – Kevin</blockquote>
 	</div>
 
 	
