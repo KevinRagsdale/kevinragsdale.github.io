@@ -396,22 +396,22 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p>After many stops and starts over the past couple of weeks, I’ve <strong>finally</strong> posted the source code for the Desktop Alerts System.</p>
+<p>After many stops and starts over the past couple of weeks, I've <strong>finally</strong> posted the source code for the Desktop Alerts System.</p>
 <p>You can download the file <a href="/Downloads/DesktopAlerts.zip" target="_blank">here</a> (558kb).</p>
-<p>The zip file, DesktopAlerts.zip, contains three files: a README file, the PDF version of the whitepaper from the <a href="http://foxforward.net/" target="_blank">FoxForward</a> 2006 conference, and an additional zipped file (all source code and a compiled EXE).</p>
-<p>I have found in my testing that if I recompile the project in VFP 7 or VFP 8, the Alert form size and placement is “off”, so I recommend using VFP 9 SP1.</p>
-<p>If you have the VFP 9 runtimes installed, you can ‘install’ the EXE by running the executable (vfpalert.exe) with the /regserver switch.</p>
-<p>Once ‘installed’, you can start the Desktop Alerts System with code like the following:</p>
-<p>oMgr = CreateObject(“VFPAlert.AlertManager”)</p>
-<p>If you run Windows Task Manager, you will see a new process named “vfpalert.exe”. This is the Desktop Alerts System, waiting for you to create some alerts.</p>
+<p>The zip file, DesktopAlerts.zip, contains three files: a README file, the PDF version of the whitepaper from the FoxForward 2006 conference, and an additional zipped file (all source code and a compiled EXE).</p>
+<p>I have found in my testing that if I recompile the project in VFP 7 or VFP 8, the Alert form size and placement is "off", so I recommend using VFP 9 SP1.</p>
+<p>If you have the VFP 9 runtimes installed, you can install the EXE by running the executable (vfpalert.exe) with the /regserver switch.</p>
+<p>Once installed, you can start the Desktop Alerts System with code like the following:</p>
+<pre>oMgr = CreateObject(“VFPAlert.AlertManager”)</pre>
+<p>If you run Windows Task Manager, you will see a new process named <strong>vfpalert.exe</strong>. This is the Desktop Alerts System, waiting for you to create some alerts.</p>
 <p>To create a quick alert, try the following:</p>
-<p>oAlert = oMgr.NewAlert()</p>
+<pre>oAlert = oMgr.NewAlert()</pre>
 <p>then</p>
-<p>oAlert.Alert(“Hello World!”)</p>
+<pre>oAlert.Alert("Hello World!")</pre>
 <p>Check the source code for all available parameters.</p>
 <p>If you want to do something with the return value from an alert, you will need to set up a callback object <em>before</em> you call the Alert() method (see the PROGRAM1.PRG, PROGRAM2.PRG, and FROMVFP6.PRG files in the source code directory for more info).</p>
 <p>If you have any questions, comments, etc, please feel free to contact me via the contact information in the README.TXT file.</p>
-<p>I have sent a proposal to VFPX for the Desktop Alerts System, because there is still a <em>ton </em>of work that can be done to improve it. In the meantime, have fun with this, and let me know how/where/why you make fixes to it!!!</p>
+<p>I have sent a proposal to VFPX for the Desktop Alerts System, because there is still a <em>ton</em>of work that can be done to improve it. In the meantime, have fun with this, and let me know how/where/why you make fixes to it!</p>
 
 	</div>
 
