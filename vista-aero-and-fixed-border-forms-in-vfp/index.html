@@ -396,13 +396,13 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p>I was working on my first VFP 9 app using Vista this week, and I had some forms that just refused to appear correctly. Specifically, the form’s Title Bar and Border would just disappear.</p>
-<p>Looks like I’m not alone in this, as Rick Strahl <a href="http://www.west-wind.com/wconnect/weblog/ShowEntry.blog?id=571" target="_blank">wrote on his blog</a>.</p>
-<p>This seemed to only happen with Aero turned on, and with ‘fixed’ BorderStyle’s on my forms.</p>
-<p>My workaround was to make the form BorderStyle=3 (Sizable), and set the MaxHeight, MinHeight, MaxWidth and MinWidth properties to the form’s Height and Width.</p>
+<p>I was working on my first VFP 9 app using Vista this week, and I had some forms that just refused to appear correctly. Specifically, the form Title Bar and Border would just disappear.</p>
+<p>Looks like I'm not alone in this, as Rick Strahl <a href="http://www.west-wind.com/wconnect/weblog/ShowEntry.blog?id=571" target="_blank">wrote on his blog</a>.</p>
+<p>This seemed to only happen with Aero turned on, and with fixed BorderStyle on my forms.</p>
+<p>My workaround was to make the form BorderStyle=3 (Sizable), and set the MaxHeight, MinHeight, MaxWidth and MinWidth properties to the form's Height and Width.</p>
 <p>Problem solved!</p>
-<p>Except for one thing. Now the user will see the ‘resize’ cursor when they hover over a border. They can try all they want to resize, but they can’t (thanks to the Max and Min settings).</p>
-<p>I tried leaving the BorderStyle as 2, then adding code to my form’s INIT() to check the OS version and change the properties on-the-fly, but it was a no-go, so until VFP9SP2 I’m going to stick with this method for now.</p>
+<p>Except for one thing. Now the user will see the resize cursor when they hover over a border. They can try all they want to resize, but they can't (thanks to the Max and Min settings).</p>
+<p>I tried leaving the BorderStyle as 2, then adding code to my form's INIT() to check the OS version and change the properties on-the-fly, but it was a no-go, so until VFP9SP2 I'm going to stick with this method.</p>
 
 	</div>
 
