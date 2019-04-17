@@ -397,18 +397,15 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p>The default colors are driven by the values returned by the GetSysColor function in the Windows API. We’ll be using GetSysColor when creating custom controls later in the series.</p>
+<p>The default colors are driven by the values returned by the GetSysColor function in the Windows API. We’ll be using GetSysColor when creating custom controls later in the series.</p>
 <p>I’ve included a form, frmGetColors.scx (the download link is at the end of this post), which shows all of the current GetSysColor values based on the current Windows color scheme (or theme).</p>
 <p>The form (pictured below) includes some Windows Event Binding code (which I <del>stole</del> leveraged from Tamar’s BINDEVENTS session), to automatically update the form when the Windows theme changes.</p>
-<div id="attachment_889" class="wp-caption alignnone amp-wp-inline-9dc500f4909f616974e1c58ba8848670"><a href="https://i2.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/GetSysColors.png"><amp-img class="size-full wp-image-889 amp-wp-enforced-sizes" alt="frmGetColors shows current Windows color scheme values" src="https://i2.wp.com/kevinragsdale.info/wp-content/uploads/2012/12/GetSysColors.png?resize=546%2C681" srcset="https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/GetSysColors.png?w=546&amp;ssl=1 546w, https://i2.wp.com/kevinragsdale.net/wp-content/uploads/2012/12/GetSysColors.png?resize=240%2C300&amp;ssl=1 240w" sizes="(min-width: 546px) 546px, 100vw" width="546" height="681"></amp-img></a><p class="wp-caption-text">frmGetColors shows current Windows color scheme values</p></div>
+<amp-img class="amp-wp-enforced-sizes" alt="frmGetColors shows current Windows color scheme values" src="../img/GetSysColors.png" sizes="(min-width: 546px) 546px, 100vw" width="546" height="681"></amp-img>
 <p>To use the GetSysColor function in Visual FoxPro, simply DECLARE the function, and then call it with one of the API Param numbers shown in the figure above:</p>
 <pre>DECLARE INTEGER GetSysColor IN WIN32API INTEGER nIndex&#13;
 ?GetSysColor(15) &amp;&amp; 3DFACE (Buttons, forms)</pre>
 <p><a title="MSDN " href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms724371(v=vs.85).aspx" target="_blank">More information about the GetSysColor Windows API function at MSDN</a></p>
 <p><a title="Example form from this post" href="/Downloads/frmGetColors.zip" target="_blank">Download the frmGetColors.zip file here</a></p>
-<p> </p>
-<p> </p>
-<p> </p>
 	</div>
 
 	
