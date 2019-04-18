@@ -396,20 +396,19 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p>I’ve got a Visual FoxPro app that uses the Microsoft Web Browser ActiveX control as the primary UI.</p>
-<p>A few years ago, I needed to “upgrade” the pages being rendered by the Web Browser Control to a more modern look and feel (think HTML5), and found that many of the changes I had made simply weren’t working – all thanks to the Web Browser Control using IE7 rendering mode.</p>
-<p>That’s when I discovered the FEATURE_BROWSER_EMULATION registry key (thanks to Rick Strahl).  Rick has written about this key several times on his blog:</p>
+<p>I’ve got a Visual FoxPro app that uses the Microsoft Web Browser ActiveX control as the primary UI.</p>
+<p>A few years ago, I needed to upgrade the pages being rendered by the Web Browser Control to a more modern look and feel (think HTML5), and found that many of the changes I had made simply weren’t working – all thanks to the Web Browser Control using IE7 rendering mode.</p>
+<p>That’s when I discovered the FEATURE_BROWSER_EMULATION registry key (thanks to Rick Strahl). Rick has written about this key several times on his blog:</p>
 <p><a href="http://weblog.west-wind.com/posts/2011/May/21/Web-Browser-Control-Specifying-the-IE-Version" target="_blank">Web Browser Control – Specifying the IE Version</a> (May 11, 2011 – Updated 7/19/2014)</p>
 <p><a href="http://weblog.west-wind.com/posts/2012/Feb/15/Make-your-CHM-Help-Files-show-HTML5-and-CSS3-content" target="_blank">Make Your CHM Help Files Show HTML5 and CSS3 Content</a> (February 15, 2012)</p>
 <p><a href="http://weblog.west-wind.com/posts/2013/Jul/08/HTML5-and-CSS3-Editing-in-Windows-Live-Writer" target="_blank">HTML5 and CSS3 Editing in Windows Live Writer</a> (July 8, 2013)</p>
-<p>After reading Rick’s original post, I took the “clever” way out by adding the registry key to my InnoSetup script, and setting the Value of the key to zero (0).  Setting the key to zero tells the Web Browser Control to render pages using the currently installed version of IE on the users computer.</p>
-<p>This has worked well for me the past couple of years.</p>
-<p><em>Until this weekend.</em></p>
+<p>After reading Rick’s original post, I took the <em>clever</em> way out by adding the registry key to my InnoSetup script, and setting the Value of the key to zero (0). Setting the key to zero tells the Web Browser Control to render pages using the currently installed version of IE on the users computer.</p>
+<p>This has worked well for me the past couple of years. <em>Until this weekend</em>.</p>
 <p>On Saturday, I updated my Windows 10 virtual machine to Build 10130, and started up my app.</p>
-<p>The app loaded fine, but instead of rendering the “home” page as it should, there was nothing but a blank white area where the Web Browser Control sits.  Even worse, when I closed the app, the EXE continued running in Windows Task Manager.  This is a problem, since I prevent more than one instance of the app from running on a machine.  Double-clicking the icon to start the app again did nothing, as the EXE was still running – but was invisible.</p>
+<p>The app loaded fine, but instead of rendering the home page as it should, there was nothing but a blank white area where the Web Browser Control sits. Even worse, when I closed the app, the EXE continued running in Windows Task Manager.  This is a problem, since I prevent more than one instance of the app from running on a machine. Double-clicking the icon to start the app again did nothing, as the EXE was still running – but was invisible.</p>
 <p>After trying several different things to get the page to load, I finally removed the registry key for FEATURE_BROSWER_EMULATION for the application EXE – I restarted the app, and it rendered the pages perfectly.</p>
 <p>I’ve jumped through several different values for the registry key, and it seems no matter <a href="https://msdn.microsoft.com/en-us/library/ee330730(v=vs.85).aspx#BROWSER_EMULATION" target="_blank">which value I choose</a> the Web Browser Control (in Windows 10 Build 10130) renders the pages based on the version of Internet Explorer that is installed (in my case, IE 11).</p>
-<p>This piqued my curiosity for other versions of Windows, and it appears I can set the decimal value for FEATURE_BROWSER_EMULATION to 11000 (IE11 Standards mode) for all OSes from XP forward to ensure the Web Browser Control will render pages based on the version of Internet Explorer that is installed.  In Windows XP (which can only go to IE8, the pages rendered as I expected them to render for IE8).</p>
+<p>This piqued my curiosity for other versions of Windows, and it appears I can set the decimal value for FEATURE_BROWSER_EMULATION to 11000 (IE11 Standards mode) for all OSes from XP forward to ensure the Web Browser Control will render pages based on the version of Internet Explorer that is installed. In Windows XP (which can only go to IE8, the pages rendered as I expected them to render for IE8).</p>
 </div>
 </article>
 <footer class="amp-wp-footer">
