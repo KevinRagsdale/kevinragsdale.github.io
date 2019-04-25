@@ -396,14 +396,14 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p><strong>Updated December 18, 2013: Source code for lblHyperlink is <a title="lblHyperlink Source Code" href="/source-code-lblhyperlink-subclassed-lbllabel/">available here</a>, parent class (lblLabel) source is <a title="lblLabel Source Code" href="/source-code-lbllabel-visual-foxpro-label-subclass/">available here</a>.</strong></p>
+		<p><strong>Updated December 18, 2013: Source code for lblHyperlink is <a title="lblHyperlink Source Code" href="https://gist.github.com/KevinRagsdale/8008085#file-lblhyperlink-prg" target="_blank">available here</a>, parent class (lblLabel) source is <a title="lblLabel Source Code" href="https://gist.github.com/KevinRagsdale/7976364#file-lbllabel-prg" target="_blank">available here</a>.</strong></p>
 <h1><strong>The lblHyperlink label subclass</strong></h1>
 <p>One of the more popular movements in desktop applications is “webification.” Users have become so used to the web interface via their browser, more and more desktop apps have added clickable hyperlinks as an important part of their UI. I’ve created a subclass of the lblLabel Visual FoxPro Label Control class to mimic a hyperlink.</p>
 <p>This subclass of the contains the following properties which override the parent class:</p>
 <pre>MousePointer = 15
 ForeColor = RGB(0,102,204)
 Name = "lblHyperlink"</pre>
-<p>I set the ForeColor to a “blue”, simply for the visual cue in design time that I’m working with a “hyperlink” instead of a plain old label.</p>
+<p>I set the ForeColor to blue, simply for the visual cue in design time that I’m working with a hyperlink instead of a plain old label.</p>
 <p>Plus a couple of other properties, for the ForeColor (we’ll change the ForeColor when the user hovers over the link):</p>
 <pre>nForeColor = 0
 nHoverColor = 0</pre>
