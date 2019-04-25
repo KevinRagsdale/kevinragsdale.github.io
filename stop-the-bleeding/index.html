@@ -397,11 +397,11 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p>Have you ever noticed that some controls tend to “bleed” when the user clicks on them more than once? I’ve seen it often with OptionGroups and Checkboxes when the BackStyle has been set to transparent.</p>
-<div id="attachment_952" class="wp-caption alignnone amp-wp-inline-0bd9af67fa10f450931b6e2bee317cc2"><a href="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2013/01/BleedingCheckbox.png"><amp-img class="size-full wp-image-952 amp-wp-enforced-sizes" alt="Multiple clicks cause pixel bleeding" src="https://i1.wp.com/kevinragsdale.info/wp-content/uploads/2013/01/BleedingCheckbox.png?resize=153%2C33" srcset="https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2013/01/BleedingCheckbox.png?w=153&amp;ssl=1 153w, https://i1.wp.com/kevinragsdale.net/wp-content/uploads/2013/01/BleedingCheckbox.png?resize=150%2C33&amp;ssl=1 150w" sizes="(min-width: 153px) 153px, 100vw" width="153" height="33"></amp-img></a><p class="wp-caption-text">Multiple clicks cause pixel bleeding</p></div>
-<p>The easiest “fix” I’ve found for this (besides making the BackStyle Opaque) is to put the following line of code in a user-actionable event (I usually put it in the Click or InteractiveChange event):</p>
+<p>Have you ever noticed that some controls tend to <em>bleed</em> when the user clicks on them more than once? I’ve seen it often with OptionGroups and Checkboxes when the BackStyle has been set to transparent.</p>
+<amp-img class="amp-wp-enforced-sizes" alt="Multiple clicks cause pixel bleeding" src="../img/BleedingCheckbox.png" sizes="(min-width: 153px) 153px, 100vw" width="153" height="33"></amp-img>
+<p>The easiest fix I’ve found for this (besides making the BackStyle Opaque) is to put the following line of code in a user-actionable event (I usually put it in the Click or InteractiveChange event):</p>
 <pre>This.Caption = This.Caption</pre>
-<p>This code doesn’t actually <em>do</em> anything, but I have found that it “stops the bleeding”.</p>
+<p>This code doesn’t actually <em>do</em> anything, but I have found that it stops the bleeding.</p>
 <p> </p>
 	</div>
 
