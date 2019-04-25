@@ -397,7 +397,7 @@ amp-carousel > amp-img > img {
 
 	
 	<div class="amp-wp-article-content">
-		<p><strong>Updated December 16, 2013: Source code for lblLabel is <a title="lblLabel Source Code" href="/source-code-lbllabel-visual-foxpro-label-subclass/">available here</a>.</strong></p>
+<p><strong>Updated December 16, 2013: Source code for lblLabel is <a title="lblLabel Source Code" href="https://gist.github.com/KevinRagsdale/7976364#file-lbllabel-prg" target="_blank">available here</a>.</strong></p>
 <p>The next few blog posts will look at subclassing the Visual FoxPro base classes, with an emphasis on UI design as it relates to Microsoft’s User Experience Interaction Guidelines (or UX Guide). Since the emphasis is on playing well with Windows, I’ll assume that my apps will be using Themes when available at the OS-level.</p>
 <p><span class="amp-wp-inline-547a08ae65fc7bbc88895fe7940b08b1">Subclassing the Visual FoxPro Label Control</span></p>
 <p>Typically, I stick to the following default properties for labels:</p>
@@ -407,7 +407,7 @@ FontName = "Segoe UI" (Default for my development OS)
 FontSize = 9 (Default for my development OS)</pre>
 <p>Though I <a title="Respecting The User’s Font Settings" href="/respecting-the-users-font-settings/" target="_blank">typically use</a> “Segoe UI” as the FontName, since I’m currently <a title="Have You Seen My Segoe?" href="/have-you-seen-my-segoe/" target="_blank">using Windows 8</a> I’m actually going to use “Segoe UI Symbol” in the Properties window, and change it to Segoe UI in code for the class.</p>
 <p>I use AutoSize because I may need to change the font name and/or size, depending on the version of Windows the app is running on, and I use the default font and size for the OS on my development machine. This makes form design much easier for me. I also set the label BackStyle to transparent to prevent it from having a “gray” backcolor if the label is placed on a control (or form) that is not using a “default” color.</p>
-<p>I consider label controls to be equivalent to “text” in Microsoft-speak. As long as we’re discussing labels (and text), let’s talk a little about fonts and font sizes.</p>
+<p>I consider label controls to be equivalent to text in Microsoft-speak. As long as we’re discussing labels (and text), let’s talk a little about fonts and font sizes.</p>
 <p>The <a title="Windows User Experience Interaction Guidelines for Windows Desktop" href="http://msdn.microsoft.com/en-us/windows/desktop/aa511258.aspx" target="_blank">Microsoft UX Guide</a> contains the following recommendations for fonts and font sizes:</p>
 <table><thead><tr><th>Operating System</th>
 <th>Font (size)</th>
@@ -443,7 +443,7 @@ ELSE
    This.FontName = "Segoe UI"
    This.FontSize = 9
 ENDIF</pre>
-<p>Even though users normally don’t “click” on Labels, some additional subclassed labels we’ll cover later (think hyperlinks) <em>do</em> have clickable interactions, so I’ve added the following code to the Click event for the label :</p>
+<p>Even though users normally don’t click on Labels, some additional subclassed labels we’ll cover later (think hyperlinks) <em>do</em> have clickable interactions, so I’ve added the following code to the Click event for the label :</p>
 <pre>PROCEDURE Click
    ** Code in methods, not events!
    This.OnClick()
@@ -453,8 +453,8 @@ ENDPROC</pre>
    ** Abstract method called by the Click() event
 ENDPROC</pre>
 <p>And we’re all set and ready to drop an instance of our label on a form!</p>
-<p>But, there’s some additional considerations…</p>
-<p>Some of our subclasses of this Label control will be set to use colors other than the “Default” colors found in the Visual FoxPro Properties window. While these different-colored labels will look fine in most instances, there are times I might want the Label (or “text”) to revert back to the <a title="So, What Are The “Default” Colors Anyway?" href="/so-what-are-the-default-colors-anyway/" target="_blank">Windows System Color</a>.</p>
+<p>But, there are some additional considerations.</p>
+<p>Some of our subclasses of this Label control will be set to use colors other than the “Default” colors found in the Visual FoxPro Properties window. While these different-colored labels will look fine in most instances, there are times I might want the Label (or text) to revert back to the <a title="So, What Are The “Default” Colors Anyway?" href="/so-what-are-the-default-colors-anyway/" target="_blank">Windows System Color</a>.</p>
 <p>We’ll look at those instances in a future post.</p>
 	</div>
 
