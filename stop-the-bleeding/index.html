@@ -398,7 +398,7 @@ amp-carousel > amp-img > img {
 	
 	<div class="amp-wp-article-content">
 <p>Have you ever noticed that some controls tend to <em>bleed</em> when the user clicks on them more than once? I’ve seen it often with OptionGroups and Checkboxes when the BackStyle has been set to transparent.</p>
-<amp-img class="amp-wp-enforced-sizes" alt="Multiple clicks cause pixel bleeding" src="../img/BleedingCheckbox.png" sizes="(min-width: 153px) 153px, 100vw" width="153" height="33"></amp-img>
+<p><amp-img class="amp-wp-enforced-sizes" alt="Multiple clicks cause pixel bleeding" src="../img/BleedingCheckbox.png" sizes="(min-width: 153px) 153px, 100vw" width="153" height="33"></amp-img></p>
 <p>The easiest fix I’ve found for this (besides making the BackStyle Opaque) is to put the following line of code in a user-actionable event (I usually put it in the Click or InteractiveChange event):</p>
 <pre>This.Caption = This.Caption</pre>
 <p>This code doesn’t actually <em>do</em> anything, but I have found that it stops the bleeding.</p>
